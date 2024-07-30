@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <div class="overlay"></div>
+        <div class="overlay active"></div>
         <a href="#">
           <h1 class="logo">HouseCat</h1>
         </a>
 
-        <nav class="navbar">
+        <nav class="navbar active">
           <div class="navbar-top">
             <a href="#" class="logo">HouseCat</a>
 
@@ -42,10 +42,22 @@
             <li class="navbar-item">
               <a href="#doe" class="navbar-link">Doe</a>
             </li>
-            
-            
           </ul>
         </nav>
+
+
+        <a href="#" class="btn">
+        <span class="material-symbols-outlined" aria-hidden="true">
+          pets
+          </span>
+          <span>Get a Quote</span>
+        </a>
+
+        <button class="nav-open-btn" aria-label="Open Menu">
+          <span class="material-symbols-outlined">
+            menu
+            </span>
+        </button>
       </div>
     </header>
     <script src="main.js"></script>

@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* colors */
 
-:root{
+:root {
   --st-patricks-blue: hsl(236, 57%, 28%);
   --amaranth-purple: hsl(335, 88%, 38%);
   --royal-blue-dark: hsl(231, 68%, 21%);
@@ -19,49 +19,162 @@
   --rajah: hsl(29, 99%, 67%);
   --white: hsl(0, 0%, 100%);
 
-  --gradient-1: linear-gradient(90deg,var(--royal-blue-dark) 0,var(--ksu-purple) 51%,var(--royal-blue-dark));
-  --gradient-2: linear-gradient(90deg,var(--razzmatazz) ,var(--rajah));
+  --gradient-1: linear-gradient(
+    90deg,
+    var(--royal-blue-dark) 0,
+    var(--ksu-purple) 51%,
+    var(--royal-blue-dark)
+  );
+  --gradient-2: linear-gradient(90deg, var(--razzmatazz), var(--rajah));
 
-/* fontes */
-*{
-  --ff-source-sans-pro: 'Source Sans Pro', sans-serif;
-  --ff-poppins: 'Poppins', sans-serif;
+  /* fontes */
+  * {
+    --ff-source-sans-pro: "Source Sans Pro", sans-serif;
+    --ff-poppins: "Poppins", sans-serif;
 
-  --fs-1: 4.2rem;
-  --fs-2: 3.8rem;
-  --fs-3: 3.2rem;
-  --fs-4: 2.5rem;
-  --fs-5: 2.4rem;
-  --fs-6: 2rem;
-  --fs-7: 1.8rem;
-  --fs-8: 1.5rem;
+    --fs-1: 4.2rem;
+    --fs-2: 3.8rem;
+    --fs-3: 3.2rem;
+    --fs-4: 2.5rem;
+    --fs-5: 2.4rem;
+    --fs-6: 2rem;
+    --fs-7: 1.8rem;
+    --fs-8: 1.5rem;
 
-  --fw-500: 500;
-  --fw-600: 600;
-  --fw-700: 700;
-}
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+  }
 
-/* border radius*/
+  /* border radius*/
 
-   --radius-4: 4px;
-   --radius-12: 12px;
+  --radius-4: 4px;
+  --radius-12: 12px;
 
-    /* spacing*/
+  /* spacing*/
 
   --section-padding: 60px;
 
- /* transition */
+  /* transition */
 
-   --transition-1: 0.15s ease;
-   --transition-2: 0.35s ease;
-   --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
-   --cubic-out: cubic-bezier(0.33, 0.85, 0.56, 1.02);
- 
- /* shadow */
- 
-   --shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
+  --transition-1: 0.15s ease;
+  --transition-2: 0.35s ease;
+  --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.56, 1.02);
+
+  /* shadow */
+
+  --shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
+  
 }
 
+.header .btn {
+  display: none;
+}
 
+.header{
+  color: var(--white);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 14px;
+  z-index: 4;
+  transition: var(--transition-1);
+}
 
- 
+.header.active{
+  color: var(--st-patricks-blue);
+  position: fixed;
+  background-color: var(--white);
+  box-shadow: 0 2px 30px hsla(0, 0%, 0%, 0.1);
+}
+
+.container{
+  padding-inline: 15px;
+}
+
+.header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo{
+  color: var(--st-patricks-blue);
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-3);
+}
+
+.nav-open-btn{
+  color: var(--st-patricks-blue);
+  font-size: 2rem;
+  padding: 4px;
+
+}
+
+.navbar{
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 100%;
+  max-width: 280px;
+  min-height: 100%;
+  padding: 20px;
+  visibility: hidden;
+  z-index: 2;
+  transition: 0.25s var(--cubic-in);
+}
+
+.navbar.active{
+transform: translateX(280px);
+visibility: visible;
+transition: 0.5s var(--cubic-out);
+}
+
+.navbar-top{
+  display: flex;
+  justify-content: space-between;
+  padding-block: 10px 30px;
+}
+
+.navbar-top .logo{
+  color: var(--st-patricks-blue);
+  font-size: 3.2rem;
+  font-weight:var(--fw-700);
+}
+
+.nav-close-btn{
+  color: var(--space-cadet-1);
+ display: flex; 
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-item:not(:last-child){
+  border-bottom: 1px solid var(--platinum);
+}
+
+.navbar-link{
+  color: var(--space-cadet-1);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-600);
+  padding-block: 12px;
+}
+
+.overlay{
+  position: fixed;
+  inset: 0;
+  background-color: var(--black_70);
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition-2);
+}
+
+.overlay.active{
+  opacity:1;
+  pointer-events: all;
+}
