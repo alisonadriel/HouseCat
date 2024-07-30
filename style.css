@@ -158,6 +158,7 @@ transition: 0.5s var(--cubic-out);
 
 .navbar-link{
   color: var(--space-cadet-1);
+  font-family: var(--ff-poppins);
   font-size: var(--fs-8);
   font-weight: var(--fw-600);
   padding-block: 12px;
