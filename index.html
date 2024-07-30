@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HouseCat</title>
-  <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="nav-header">
-        <div class="nav-logo">
-          <a href="#">HouseCat</a>
-        </div>
-        <div id="menu-btn" class="nav-menu-btn">
-          <i class='bx bx-menu'></i>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HouseCat</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="overlay"></div>
+        <a href="#">
+          <h1 class="logo">HouseCat</h1>
+        </a>
+
+        <nav class="navbar">
+          <div class="navbar-top">
+            <a href="#" class="logo">HouseCat</a>
+
+            <button class="nav-close-btn" aria-label="Close Menu">
+              <span class="material-symbols-outlined"> close </span>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#sobre" class="navbar-link">Sobre</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#adote" class="navbar-link">Adote</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#doe" class="navbar-link">Doe</a>
+            </li>
+            
+            
+          </ul>
+        </nav>
       </div>
-      <ul id="nav-links" class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#home">Home</a></li>
-      </ul>
-    </nav>
-  </header>
-  <script src="main.js"></script>
-</body>
+    </header>
+    <script src="main.js"></script>
+  </body>
 </html>
