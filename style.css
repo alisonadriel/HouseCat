@@ -16,10 +16,10 @@
   --purple-navy: hsl(236, 26%, 43%);
   --ksu-purple: hsl(318, 79%, 77%);
   --winter-sky: hsl(318, 79%, 77%);
-  --razzmatazz: hsl(335, 87%, 51%);
+  --razzmatazz: hsl(25, 29%, 46%);
   --platinum: hsl(0, 0%, 90%);
   --black_70: hsla(0, 0%, 0%, 0.7);
-  --rajah: hsl(29, 99%, 67%);
+  --rajah: hsl(24, 56%, 67%);
   --white: hsl(0, 0%, 100%);
 
   --gradient-1: linear-gradient(
@@ -251,3 +251,58 @@ transition: 0.5s var(--cubic-out);
     transform: translate(0,0) rotate(0);}
     100%{transform: translate(2px,2px) rotate(1deg);}
   }
+
+
+  .about-banner{
+    font-family: var(--ff-poppins);
+   margin-block-end: 30px;
+   
+  }
+
+  h2{
+    margin-top: 30px;
+  }
+
+  .section{
+    padding-block: var(--section-padding);
+  }
+
+  .section-title{
+    color: hsl(318, 79%, 77%);
+    font-size: var(--fs-3);
+    margin-block-end: 60px;
+    max-width: max-content;
+    margin-inline: auto;
+  }
+
+  .underline{
+    position: relative;
+  }
+
+  .underline::before{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 6px;
+    background-color: blue;
+   
+  }
+
+  .about .section-title{
+    margin-inline: 0;
+  }
+
+  .about .underline::before{
+    left: 0;
+    transform: translateX(0);
+  }
+
+  .about-text{
+    font-size: var(--fs-8);
+    margin-block-end: 20px;
+  }
+
+  
