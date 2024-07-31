@@ -234,6 +234,7 @@ transition: 0.5s var(--cubic-out);
 
 .btn:is(:hover, :focus){
   background-position: right;
+  background-color: rgb(68, 37, 37);
 }
 
 .w-100{
@@ -287,7 +288,8 @@ transition: 0.5s var(--cubic-out);
     transform: translateX(-50%);
     width: 70%;
     height: 6px;
-    background-color: blue;
+    background-color: rgb(90, 16, 228);
+    border-radius: 20px;
    
   }
 
@@ -303,6 +305,19 @@ transition: 0.5s var(--cubic-out);
   .about-text{
     font-size: var(--fs-8);
     margin-block-end: 20px;
+  }
+
+  .adote-btn{
+    background-color:rgb(90, 16, 228);
+    background-size: 200%;
+    font-family: "Poppins";
+    color: var(--white);
+    padding: 12px 35px;
+    font-size: var(--fs-8);
+    font-weight: var(--fw-600);
+    border-radius: 0 25px;
+    transition: var(--transition-2);
+    
   }
 
   
