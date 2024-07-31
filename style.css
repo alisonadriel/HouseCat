@@ -240,6 +240,8 @@ transition: 0.5s var(--cubic-out);
   width: 100%;
 }
 
+
+
 .banner-animation{
   animation: waveAnim 2s linear infinite alternate;
 }
