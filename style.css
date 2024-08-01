@@ -90,7 +90,7 @@
   color: var(--st-patricks-blue);
   position: fixed;
   background-color: var(--white);
-  box-shadow: 0 2px 30px hsla(0, 0%, 0%, 0.1);
+  box-shadow: 0 2px 30px hsla(0, 0%, 0%, 0.048);
 }
 
 .container{
