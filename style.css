@@ -325,6 +325,10 @@ transition: 0.5s var(--cubic-out);
     gap: 30px;
   }
 
+  h2{
+    font-family: var(--ff-poppins);
+  }
+
   .service-card{
     padding: 30px;
     box-shadow: var(--shadow);
@@ -345,7 +349,7 @@ transition: 0.5s var(--cubic-out);
   }
 
   .service-card div span{
-    color: rgb(255, 255, 255);
+    color: hsl(0, 0%, 100%);
   }
 
   
