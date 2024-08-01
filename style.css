@@ -335,13 +335,17 @@ transition: 0.5s var(--cubic-out);
     background-image: url(assets/img/service-banner-pattern.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: hsla(335, 87%, 53%, 0.12);
+    background-color: hsl(318, 79%, 77%);
     aspect-ratio: 1/1;
     max-width: 165px;
     display: grid;
     place-content: center;
     margin-inline: auto;
     transition: var(--transition-1);
+  }
+
+  .service-card div span{
+    color: rgb(255, 255, 255);
   }
 
   
