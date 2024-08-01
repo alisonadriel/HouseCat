@@ -270,7 +270,7 @@ transition: 0.5s var(--cubic-out);
   }
 
   .section-title{
-    color: hsl(318, 79%, 77%);
+    color: rgb(90, 16, 228);
     font-size: var(--fs-3);
     margin-block-end: 60px;
     max-width: max-content;
@@ -289,7 +289,7 @@ transition: 0.5s var(--cubic-out);
     transform: translateX(-50%);
     width: 70%;
     height: 6px;
-    background-color: rgb(90, 16, 228);
+    background-color:hsl(318, 79%, 77%);
     border-radius: 20px;
    
   }
@@ -321,6 +321,10 @@ transition: 0.5s var(--cubic-out);
     
   }
 
+  #help-title{
+    color: rgb(92, 51, 51);
+  }
+
   .service-list{
     display: grid;
     gap: 30px;
@@ -334,29 +338,59 @@ transition: 0.5s var(--cubic-out);
     padding: 30px;
     box-shadow: var(--shadow);
     border-radius: var(--radius-12);
-    background-color:hsl(0, 2%, 92%);
+    background-color:hsl(0, 0%, 99%);
     box-shadow: 2px 5px 10px 7px rgba(0, 0, 0, 0.062)
   }
   
   .service-card .card-icon{
-    background-image: url(assets/img/service-banner-pattern.png);
+    background-image: url(assets/img/cat-toy.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: hsl(315, 93%, 82%);
     animation: waveAnim 2s linear infinite alternate;
     mix-blend-mode: multiply;
     aspect-ratio: 1/1;
-    max-width: 165px;
+    max-width: 120px;
     display: grid;
     place-content: center;
     margin-inline: auto;
     transition: var(--transition-1);
   }
 
+  .service-card .card-icon2{
+    background-image: url(assets/img/cat-toy3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: waveAnim 2s linear infinite alternate;
+    mix-blend-mode: multiply;
+    aspect-ratio: 1/1;
+    max-width: 120px;
+    display: grid;
+    place-content: center;
+    margin-inline: auto;
+    transition: var(--transition-1);
+  }
+
+  .service-card .card-icon3{
+    background-image: url(assets/img/cat-toy2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: waveAnim 2s linear infinite alternate;
+    mix-blend-mode: multiply;
+    aspect-ratio: 1/1;
+    max-width: 120px;
+    display: grid;
+    place-content: center;
+    margin-inline: auto;
+    transition: var(--transition-1);
+  }
+
+  
+
 
   
 
   .service-card div span{
+    display: none;
     color: hsl(0, 0%, 100%);
   }
 
