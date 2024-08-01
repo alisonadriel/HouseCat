@@ -347,7 +347,6 @@ transition: 0.5s var(--cubic-out);
     background-repeat: no-repeat;
     background-size: contain;
     animation: waveAnim 2s linear infinite alternate;
-    mix-blend-mode: multiply;
     aspect-ratio: 1/1;
     max-width: 120px;
     display: grid;
@@ -361,7 +360,6 @@ transition: 0.5s var(--cubic-out);
     background-repeat: no-repeat;
     background-size: contain;
     animation: waveAnim 2s linear infinite alternate;
-    mix-blend-mode: multiply;
     aspect-ratio: 1/1;
     max-width: 120px;
     display: grid;
@@ -375,7 +373,6 @@ transition: 0.5s var(--cubic-out);
     background-repeat: no-repeat;
     background-size: contain;
     animation: waveAnim 2s linear infinite alternate;
-    mix-blend-mode: multiply;
     aspect-ratio: 1/1;
     max-width: 120px;
     display: grid;
@@ -405,7 +402,7 @@ transition: 0.5s var(--cubic-out);
 
   .service-card .title{
     font-family: var(--ff-poppins);
-    color: rgb(90, 16, 228);
+    color: hsl(318, 79%, 77%);
     font-size: var(--fs-4);
     font-weight: var(--fw-700);
   }
