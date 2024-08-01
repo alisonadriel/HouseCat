@@ -334,7 +334,8 @@ transition: 0.5s var(--cubic-out);
     padding: 30px;
     box-shadow: var(--shadow);
     border-radius: var(--radius-12);
-    background-color:hsl(0, 2%, 92%); ;
+    background-color:hsl(0, 2%, 92%);
+    box-shadow: 2px 5px 10px 7px rgba(0, 0, 0, 0.062)
   }
   
   .service-card .card-icon{
@@ -377,7 +378,6 @@ transition: 0.5s var(--cubic-out);
   .service-card .text{
     font-family: var(--ff-poppins);
     font-size: var(--fs-8);
-    
     font-weight: 500;
   }
 
