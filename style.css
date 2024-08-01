@@ -211,11 +211,12 @@ transition: 0.5s var(--cubic-out);
 .hero-title{
   color: rgb(90, 16, 228);
   font-size: var(--fs-1);
-  margin-block-end: 20px;
+  margin-block-start: -25px;
 }
 
 .hero-text{
   color: var(--white);
+  font-family: var(--ff-poppins);
   font-size: var(--fs-8);
   margin-block-end: 30px;
 }
@@ -333,13 +334,15 @@ transition: 0.5s var(--cubic-out);
     padding: 30px;
     box-shadow: var(--shadow);
     border-radius: var(--radius-12);
+    background-color:hsl(0, 2%, 92%); ;
   }
   
   .service-card .card-icon{
     background-image: url(assets/img/service-banner-pattern.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: hsl(318, 79%, 77%);
+    background-color: hsl(315, 93%, 82%);
+    mix-blend-mode: multiply;
     aspect-ratio: 1/1;
     max-width: 165px;
     display: grid;
@@ -348,8 +351,48 @@ transition: 0.5s var(--cubic-out);
     transition: var(--transition-1);
   }
 
+
+  
+
   .service-card div span{
     color: hsl(0, 0%, 100%);
   }
+
+  .service-card:hover .card-icon{
+    background-color:hsl(318, 49%, 50%);
+  }
+
+  .service-card .card-icon span{
+    font-size: 5rem;
+    transition: var(--transition-1);
+  }
+
+  .service-card .title{
+    font-family: var(--ff-poppins);
+    color: rgb(90, 16, 228);
+    font-size: var(--fs-4);
+    font-weight: var(--fw-700);
+  }
+
+  .service-card .text{
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-8);
+    
+    font-weight: 500;
+  }
+
+  .service-card .title{
+    text-align: center;
+    margin-block-end: 15px;
+  }
+
+  .service-card .text{
+    text-align: center;
+    margin-block-end: 20px;
+    font-family: var(--ff-poppins);
+  }
+
+ 
+
 
   
