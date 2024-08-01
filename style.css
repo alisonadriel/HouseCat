@@ -343,6 +343,7 @@ transition: 0.5s var(--cubic-out);
     background-repeat: no-repeat;
     background-size: contain;
     background-color: hsl(315, 93%, 82%);
+    animation: waveAnim 2s linear infinite alternate;
     mix-blend-mode: multiply;
     aspect-ratio: 1/1;
     max-width: 165px;
