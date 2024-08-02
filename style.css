@@ -424,7 +424,59 @@ transition: 0.5s var(--cubic-out);
     font-family: var(--ff-poppins);
   }
 
- 
 
 
+
+  .form-section{
+    margin: 25px 10px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius-12);
+    background-color:hsl(293, 80%, 70%);
+    box-shadow: 2px 5px 10px 7px rgba(0, 0, 0, 0.062)
+  }
+
+  .cat-input-img{
+    aspect-ratio: 1/1;
+    max-width: 200px;
+    margin: 0 auto;
+    animation: waveAnim 2s linear infinite alternate;
+  }
+
+  .input-box{
+    position: relative;
+    margin-bottom: -25px;
+    padding: 20px;
+  }
+
+  .input-box input, 
+  .input-box textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    outline: none;
+  }
+
+  .input-box textarea{
+    resize: none;
+    height: 80px;
+  }
+
+  .form-btn{
+    font-size: 1.5rem;
+    font-family: var(--ff-poppins);
+    margin: 10px auto;
+    width: 50%;
+    padding: 10px 20px;
+    font-weight: 700;
+    border: none;
+    color: white;
+    background-color: rgb(90, 16, 228);
+    cursor: pointer;
+    border-radius: 0 25px;
+    transition: 0.5s;
+  }
   

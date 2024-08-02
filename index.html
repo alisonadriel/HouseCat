@@ -1,188 +1,187 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HouseCat</title>
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="header active">
-      <div class="container">
-        <div class="overlay"></div>
-        <a href="#">
-          <h1 class="logo">HouseCat</h1>
-        </a>
 
-        <nav class="navbar">
-          <div class="navbar-top">
-            <a href="#" class="logo">HouseCat</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HouseCat</title>
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-            <button class="nav-close-btn" aria-label="Close Menu">
-              <span class="material-symbols-outlined"> close </span>
-            </button>
+<body>
+  <header class="header active">
+    <div class="container">
+      <div class="overlay"></div>
+      <a href="#">
+        <h1 class="logo">HouseCat</h1>
+      </a>
+
+      <nav class="navbar">
+        <div class="navbar-top">
+          <a href="#" class="logo">HouseCat</a>
+
+          <button class="nav-close-btn" aria-label="Close Menu">
+            <span class="material-symbols-outlined"> close </span>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#sobre" class="navbar-link">Sobre</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#adote" class="navbar-link">Adote</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#doe" class="navbar-link">Doe</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="#" class="btn">
+        <span class="material-symbols-outlined" aria-hidden="true">
+          pets
+        </span>
+        <span>Get a Quote</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="Open Menu">
+        <span class="material-symbols-outlined"> menu </span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-subtitle">
+              Somos uma ONG localizada no Rio de Janeiro
+            </p>
+
+            <h2 class="h2 hero-title">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Officia, similique!
+            </h2>
+
+            <p class="hero-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              odio rerum nobis officiis velit culpa.
+            </p>
+
+            <button class="btn">Adote já!</button>
           </div>
 
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <a href="#home" class="navbar-link">Home</a>
+          <figure class="hero-banner">
+            <img src="assets/img/cat-banner.png" width="694" height="529" alt="" loading="lazy"
+              class="w-100 banner-animation" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container">
+          <figure class="about-banner">
+            <img src="assets/img/cat-banner2.png" alt="about banner" width="700" height="532" loading="lazy"
+              class="w-100 banner-animation" />
+
+            <div class="about-content">
+              <h2 class="h2 section-title underline">Lorem ipsum dolor.</h2>
+              <p class="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                nemo suscipit recusandae aliquam, dolorum quia.
+              </p>
+
+              <p class="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                nemo suscipit recusandae aliquam, dolorum quia.
+              </p>
+
+              <button class="adote-btn">Apoie a ONG</button>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-service" id="services">
+        <div class="container">
+          <h2 class="h2 section-title underline" id="help-title">
+            Como ajudar?
+          </h2>
+
+          <ul class="service-list">
+            <li>
+              <div class="service-card">
+                <div class="card-icon"></div>
+
+                <h3 class="h3 title">Lorem, ipsum.</h3>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore soluta quo nam blanditiis commodi explicabo.
+                </p>
+
+                <button class="card-btn" aria-label="Show More"></button>
+              </div>
             </li>
-            <li class="navbar-item">
-              <a href="#sobre" class="navbar-link">Sobre</a>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon2"></div>
+
+                <h3 class="h3 title">Lorem, ipsum.</h3>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore soluta quo nam blanditiis commodi explicabo.
+                </p>
+
+                <button class="card-btn" aria-label="Show More"></button>
+              </div>
             </li>
-            <li class="navbar-item">
-              <a href="#adote" class="navbar-link">Adote</a>
-            </li>
-            <li class="navbar-item">
-              <a href="#doe" class="navbar-link">Doe</a>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon3"></div>
+
+                <h3 class="h3 title">Lorem, ipsum.</h3>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore soluta quo nam blanditiis commodi explicabo.
+                </p>
+
+                <button class="card-btn" aria-label="Show More"></button>
+              </div>
             </li>
           </ul>
-        </nav>
-
-        <a href="#" class="btn">
-          <span class="material-symbols-outlined" aria-hidden="true">
-            pets
-          </span>
-          <span>Get a Quote</span>
-        </a>
-
-        <button class="nav-open-btn" aria-label="Open Menu">
-          <span class="material-symbols-outlined"> menu </span>
-        </button>
-      </div>
-    </header>
-
-    <main>
-      <article>
-        <section class="hero" id="home">
-          <div class="container">
-            <div class="hero-content">
-              <p class="hero-subtitle">
-                Somos uma ONG localizada no Rio de Janeiro
-              </p>
-
-              <h2 class="h2 hero-title">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officia, similique!
-              </h2>
-
-              <p class="hero-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-                odio rerum nobis officiis velit culpa.
-              </p>
-
-              <button class="btn">Adote já!</button>
-            </div>
-
-            <figure class="hero-banner">
-              <img
-                src="assets/img/cat-banner.png"
-                width="694"
-                height="529"
-                alt=""
-                loading="lazy"
-                class="w-100 banner-animation"
-              />
-            </figure>
+        </div>
+      </section>
+      <section class="form-section">
+        <img class="cat-input-img" src="assets/img/cat-mail.png" alt="">
+        <form action="#">
+          <div class="input-box">
+            <input type="text" name="name" class="name" placeholder="Insira o seu nome">
           </div>
-        </section>
-
-        <section class="section about" id="about">
-          <div class="container">
-            <figure class="about-banner">
-              <img
-                src="assets/img/cat-banner2.png"
-                alt="about banner"
-                width="700"
-                height="532"
-                loading="lazy"
-                class="w-100 banner-animation"
-              />
-
-              <div class="about-content">
-                <h2 class="h2 section-title underline">Lorem ipsum dolor.</h2>
-                <p class="about-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                  nemo suscipit recusandae aliquam, dolorum quia.
-                </p>
-
-                <p class="about-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                  nemo suscipit recusandae aliquam, dolorum quia.
-                </p>
-
-                <button class="adote-btn">Apoie a ONG</button>
-              </div>
-            </figure>
+          <div class="input-box">
+            <input type="text" name="email" class="name" placeholder="Insira o seu e-mail">
           </div>
-        </section>
-
-        <section class="section-service" id="services">
-          <div class="container">
-            <h2 class="h2 section-title underline" id="help-title">Como ajudar?</h2>
-
-            <ul class="service-list">
-              <li>
-                <div class="service-card">
-                  <div class="card-icon">
-                  </div>
-
-                  <h3 class="h3 title">Lorem, ipsum.</h3>
-                  <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolore soluta quo nam blanditiis commodi explicabo.
-                  </p>
-
-                  <button class="card-btn" aria-label="Show More">
-                  </button>
-                </div>
-              </li>
-
-              <li>
-                <div class="service-card">
-                  <div class="card-icon2">
-                  </div>
-
-                  <h3 class="h3 title">Lorem, ipsum.</h3>
-                  <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolore soluta quo nam blanditiis commodi explicabo.
-                  </p>
-
-                  <button class="card-btn" aria-label="Show More">
-                  </button>
-                </div>
-              </li>
-
-              <li>
-                <div class="service-card">
-                  <div class="card-icon3">
-                  </div>
-
-                  <h3 class="h3 title">Lorem, ipsum.</h3>
-                  <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolore soluta quo nam blanditiis commodi explicabo.
-                  </p>
-
-                  <button class="card-btn" aria-label="Show More">
-                  </button>
-                </div>
-              </li>
-            </ul>
+          <div class="input-box">
+           <textarea name="message" class="message" placeholder="Insira aqui a sua mensagem..."></textarea>
           </div>
-        </section>
-      </article>
-    </main>
-    <script src="main.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
-    <script src="mail.js"></script>
-  </body>
+          <button class="form-btn">Enviar</button>
+        </form>
+      </section>
+    </article>
+  </main>
+  <script src="main.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="mail.js"></script>
+</body>
+
 </html>
