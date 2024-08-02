@@ -432,7 +432,7 @@ transition: 0.5s var(--cubic-out);
     padding: 30px;
     box-shadow: var(--shadow);
     border-radius: var(--radius-12);
-    background-color:hsl(293, 80%, 70%);
+    background-color:hsl(318, 79%, 77%);
     box-shadow: 2px 5px 10px 7px rgba(0, 0, 0, 0.062)
   }
 
@@ -474,7 +474,7 @@ transition: 0.5s var(--cubic-out);
     font-weight: 700;
     border: none;
     color: white;
-    background-color: rgb(90, 16, 228);
+    background-color:  rgb(92, 51, 51);
     cursor: pointer;
     border-radius: 0 25px;
     transition: 0.5s;
