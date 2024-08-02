@@ -458,6 +458,8 @@ transition: 0.5s var(--cubic-out);
     border: none;
     color: black;
     outline: none;
+    font-family: var(--ff-poppins);
+    font-size: 1.2rem;
   }
 
   .input-box textarea{
