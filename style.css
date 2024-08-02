@@ -432,7 +432,7 @@ transition: 0.5s var(--cubic-out);
     padding: 30px;
     box-shadow: var(--shadow);
     border-radius: var(--radius-12);
-    background-color:rgb(255, 129, 83);
+    background-color:hsl(318, 79%, 77%);
     box-shadow: 2px 5px 10px 7px rgba(0, 0, 0, 0.062);
     padding-bottom: 30px;
   }
