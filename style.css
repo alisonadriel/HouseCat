@@ -391,10 +391,6 @@ transition: 0.5s var(--cubic-out);
     color: hsl(0, 0%, 100%);
   }
 
-  .service-card:hover .card-icon{
-    background-color:hsl(318, 49%, 50%);
-  }
-
   .service-card .card-icon span{
     font-size: 5rem;
     transition: var(--transition-1);
@@ -457,7 +453,7 @@ transition: 0.5s var(--cubic-out);
     font-size: 1rem;
     border-radius: 10px;
     border: none;
-    color: black;
+    box-shadow: var(--shadow);
     outline: none;
     font-family: var(--ff-poppins);
     font-size: 1.2rem;
@@ -481,5 +477,6 @@ transition: 0.5s var(--cubic-out);
     cursor: pointer;
     border-radius: 0 25px;
     transition: 0.5s;
+    box-shadow: var(--shadow);
   }
   
