@@ -467,6 +467,7 @@ h2 {
   font-family: var(--ff-poppins);
   font-size: var(--fs-8);
   position: absolute;
+  
 
 }
 
@@ -475,7 +476,7 @@ h2 {
 }
 
 .footer-top{
-  background-image: url(assets/img/footer-bg.png), var(--gradient-1);
+  background-color: rgb(90, 16, 228);
   background-repeat: no-repeat;
   background-size: auto, 200%;
   background-position: center, center;
@@ -501,6 +502,7 @@ h2 {
 .footer-brand .text{
   font-size: var(--fs-8);
   margin-block-end: 20px;
+  color: rgb(255, 255, 255);
 }
 
 .social-list{
@@ -511,10 +513,41 @@ h2 {
 }
 
 .footer-top .social-link{
-  background-color: rgb(90, 16, 228);
-  font-size: 18px;
-  padding: 8px;
-  border-radius:30%;
+  font-size: 24px;
+ 
 }
 
+.footer-list:not(:last-child){
+  margin-block-end: 25px;
+}
+
+.footer-list-title{
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-700);
+  margin-block-end: 15px;
+}
+
+.footer-link{
+  padding-block: 5px;
+}
+
+
+:is(.footer-link, .footer-item-link):not(address):is(:hover, :focus){
+  text-decoration: underline;
+}
+
+.footer-item{
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding-block: 10px;
+}
+
+.footer-item-icon{
+  font-size: 2rem;
+  padding: 10px;
+ 
+}
 
