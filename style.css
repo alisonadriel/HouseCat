@@ -567,7 +567,7 @@ h2 {
   right: 15px;
   background-color: rgb(137, 32, 235);
   color: white;
-  padding: 14px;
+  padding: 12px;
   border-radius: var(--radius-4);
   box-shadow: -3px 3px 15px rgba(17, 17, 17, 0.055);
   z-index: 2;
