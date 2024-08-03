@@ -551,3 +551,19 @@ h2 {
  
 }
 
+.footer-bottom{
+  background-color: var(--space-cadet-2);
+  padding: 20px;
+  text-align: center;
+  color: var(--white);
+}
+
+.copyright-link{
+  display: inline-block;
+  text-decoration-line: underline;
+}
+
+.copyright-link:is(:hover, :focus){
+  text-decoration: none;
+}
+
