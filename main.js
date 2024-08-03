@@ -27,15 +27,15 @@ for (let i = 0; i < navBarLinks.length; i++) {
   });
 }
 
-const header = document.querySelector('.header');
-const goTopBtn = document.querySelector('.go-top');
+const header = document.querySelector(".header");
+const goTopBtn = document.querySelector(".go-top");
 
-window.addEventListener("scroll", function(){
-  if(window.scrollY >= 400){
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 400) {
     header.classList.add("active");
     goTopBtn.classList.add("active");
-  } else{
+  } else {
     header.classList.remove("active");
     goTopBtn.classList.remove("active");
   }
-})
+});

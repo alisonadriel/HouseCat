@@ -560,8 +560,7 @@ h2 {
   text-decoration: none;
 }
 
-
-.go-top{
+.go-top {
   font-size: 2rem;
   font-weight: 700;
   position: fixed;
@@ -577,7 +576,7 @@ h2 {
   opacity: 0;
   transition: var(--transition-1);
 }
-.go-top.active{
+.go-top.active {
   visibility: visible;
   opacity: 1;
   transform: translateY(-15px);
