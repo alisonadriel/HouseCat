@@ -562,15 +562,14 @@ h2 {
 
 .go-top {
   font-size: 2rem;
-  font-weight: 700;
   position: fixed;
   bottom: 0;
   right: 15px;
   background-color: rgb(137, 32, 235);
   color: white;
-  padding: 10px;
+  padding: 14px;
   border-radius: var(--radius-4);
-  box-shadow: -3px 3px 15px rgba(0, 0, 0, 0.048);
+  box-shadow: -3px 3px 15px rgba(17, 17, 17, 0.055);
   z-index: 2;
   visibility: hidden;
   opacity: 0;
