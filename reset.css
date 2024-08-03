@@ -1,4 +1,4 @@
-@import 'node_modules/boxicons/css/boxicons.min.css';
+@import "node_modules/boxicons/css/boxicons.min.css";
 
 *,
 *::before,
@@ -6,32 +6,45 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
-li { list-style: none; }
+li {
+  list-style: none;
+}
 
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+}
 
 a,
 img,
 span,
 button,
-ion-icon { display: block; }
+ion-icon {
+  display: block;
+}
 
-button{
+button {
   background: none;
   border: none;
   font: inherit;
 }
 
-button { cursor: pointer; }
+button {
+  cursor: pointer;
+}
 
-ion-icon { pointer-events: none; }
+ion-icon {
+  pointer-events: none;
+}
 
-img { height: auto; }
+img {
+  height: auto;
+}
 
-address { font-style: normal; }
+address {
+  font-style: normal;
+}
 
 html {
   font-family: var(--ff-poppins);
@@ -45,11 +58,18 @@ body {
   font-size: 1.6rem;
 }
 
-::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-::-webkit-scrollbar-track { background-color: hsl(0, 0%, 95%); }
+::-webkit-scrollbar-track {
+  background-color: hsl(0, 0%, 95%);
+}
 
-::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 80%);
+}
 
-::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
-
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 70%);
+}
