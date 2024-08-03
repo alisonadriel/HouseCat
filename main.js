@@ -32,10 +32,10 @@ const goTopBtn = document.querySelector(".go-top");
 
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 400) {
-    header.classList.add("active");
-    goTopBtn.classList.add("active");
+    header.classList.add("showBtn");
+    goTopBtn.classList.add("showBtn");
   } else {
-    header.classList.remove("active");
-    goTopBtn.classList.remove("active");
+    header.classList.remove("showBtn");
+    goTopBtn.classList.remove("showBtn");
   }
 });

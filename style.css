@@ -575,7 +575,7 @@ h2 {
   opacity: 0;
   transition: var(--transition-1);
 }
-.go-top.active {
+.go-top.showBtn {
   visibility: visible;
   opacity: 1;
   transform: translateY(-15px);
