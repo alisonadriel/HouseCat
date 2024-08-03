@@ -69,7 +69,7 @@
   --shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
 }
 
-.header .btn {
+.header .btn-top {
   display: none;
 }
 
@@ -216,6 +216,18 @@
 }
 
 .btn {
+  background-color: rgb(90, 16, 228);
+  background-size: 200%;
+  font-family: "Poppins";
+  color: var(--white);
+  padding: 12px 35px;
+  font-size: var(--fs-8);
+  font-weight: var(--fw-600);
+  border-radius: 0 25px;
+  transition: var(--transition-2);
+}
+
+.btn-adopt {
   background-color: rgb(92, 51, 51);
   background-size: 200%;
   font-family: "Poppins";
@@ -579,4 +591,66 @@ h2 {
   visibility: visible;
   opacity: 1;
   transform: translateY(-15px);
+}
+
+@media (min-width: 550px) {
+  .container {
+    max-width: 550px;
+    margin-inline: auto;
+  }
+
+  .section-title {
+    --fs-3: 3.6rem;
+  }
+
+  .header .btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-inline-start: auto;
+  }
+
+  .footer-brand,
+  .footer-list:not(:last-child) {
+    margin-block-end: 0;
+  }
+
+  .footer-top .container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 30px 50px;
+  }
+
+  @media (min-width: 768px) {
+    .container{
+      max-width: 720px;
+    }
+
+    .hero{
+      min-height: 600px;
+      display: grid;
+      place-items: center;
+    }
+
+    .hero-content{
+      margin-block-end: 0;
+    }
+
+    .hero .container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .service-list{
+      width: 700px;
+      margin: 30px auto;
+    }
+
+    .form-section{
+      width: 720px;
+      margin: 30px 158px;
+    }
+  }
 }
