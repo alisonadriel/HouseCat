@@ -593,11 +593,19 @@ h2 {
   transform: translateY(-15px);
 }
 
+@media (max-width: 550px){
+  #m-btn{
+    display: none;
+  }
+}
+
 @media (min-width: 550px) {
   .container {
     max-width: 550px;
     margin-inline: auto;
   }
+
+ 
 
   .section-title {
     --fs-3: 3.6rem;
@@ -638,19 +646,6 @@ h2 {
 
     .hero .container{
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: 30px;
-    }
-
-    .service-list{
-      width: 700px;
-      margin: 30px auto;
-    }
-
-    .form-section{
-      width: 720px;
-      margin: 30px 158px;
     }
   }
 }
