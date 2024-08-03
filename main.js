@@ -26,3 +26,16 @@ for (let i = 0; i < navBarLinks.length; i++) {
     overlay.classList.toggle("active");
   });
 }
+
+const header = document.querySelector('.header');
+const goTopBtn = document.querySelector('.go-top');
+
+window.addEventListener("scroll", function(){
+  if(window.scrollY >= 400){
+    header.classList.add("active");
+    goTopBtn.classList.add("active");
+  } else{
+    header.classList.remove("active");
+    goTopBtn.classList.remove("active");
+  }
+})

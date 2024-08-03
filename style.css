@@ -467,28 +467,25 @@ h2 {
   font-family: var(--ff-poppins);
   font-size: var(--fs-8);
   position: absolute;
-  
-
 }
 
-.footer a{
+.footer a {
   color: inherit;
 }
 
-.footer-top{
+.footer-top {
   background-color: rgb(90, 16, 228);
   background-repeat: no-repeat;
   background-size: auto, 200%;
   background-position: center, center;
   color: var(--white);
-  
 }
 
-.footer-brand{
+.footer-brand {
   margin-block-end: 30px;
 }
 
-.footer-brand .logo{
+.footer-brand .logo {
   background-image: url(assets/img/sticker.png);
   aspect-ratio: 1/1;
   max-width: 180px;
@@ -496,48 +493,45 @@ h2 {
   animation: waveAnim 2s linear infinite alternate;
   position: relative;
   top: -40px;
-  
 }
 
-.footer-brand .text{
+.footer-brand .text {
   font-size: var(--fs-8);
   margin-block-end: 20px;
   color: rgb(255, 255, 255);
 }
 
-.social-list{
+.social-list {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
 }
 
-.footer-top .social-link{
+.footer-top .social-link {
   font-size: 24px;
- 
 }
 
-.footer-list:not(:last-child){
+.footer-list:not(:last-child) {
   margin-block-end: 25px;
 }
 
-.footer-list-title{
+.footer-list-title {
   font-family: var(--ff-poppins);
   font-size: var(--fs-5);
   font-weight: var(--fw-700);
   margin-block-end: 15px;
 }
 
-.footer-link{
+.footer-link {
   padding-block: 5px;
 }
 
-
-:is(.footer-link, .footer-item-link):not(address):is(:hover, :focus){
+:is(.footer-link, .footer-item-link):not(address):is(:hover, :focus) {
   text-decoration: underline;
 }
 
-.footer-item{
+.footer-item {
   display: flex;
   justify-items: flex-start;
   align-items: center;
@@ -545,25 +539,46 @@ h2 {
   padding-block: 10px;
 }
 
-.footer-item-icon{
+.footer-item-icon {
   font-size: 2rem;
   padding: 10px;
- 
 }
 
-.footer-bottom{
+.footer-bottom {
   background-color: var(--space-cadet-2);
   padding: 20px;
   text-align: center;
   color: var(--white);
 }
 
-.copyright-link{
+.copyright-link {
   display: inline-block;
   text-decoration-line: underline;
 }
 
-.copyright-link:is(:hover, :focus){
+.copyright-link:is(:hover, :focus) {
   text-decoration: none;
 }
 
+
+.go-top{
+  font-size: 2rem;
+  font-weight: 700;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  background-color: rgb(137, 32, 235);
+  color: white;
+  padding: 10px;
+  border-radius: var(--radius-4);
+  box-shadow: -3px 3px 15px rgba(0, 0, 0, 0.048);
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transition-1);
+}
+.go-top.active{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-15px);
+}
