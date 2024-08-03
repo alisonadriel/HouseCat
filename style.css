@@ -462,3 +462,59 @@ h2 {
   transition: 0.5s;
   box-shadow: var(--shadow);
 }
+
+.footer {
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-8);
+  position: absolute;
+
+}
+
+.footer a{
+  color: inherit;
+}
+
+.footer-top{
+  background-image: url(assets/img/footer-bg.png), var(--gradient-1);
+  background-repeat: no-repeat;
+  background-size: auto, 200%;
+  background-position: center, center;
+  color: var(--white);
+  
+}
+
+.footer-brand{
+  margin-block-end: 30px;
+}
+
+.footer-brand .logo{
+  background-image: url(assets/img/sticker.png);
+  aspect-ratio: 1/1;
+  max-width: 180px;
+  margin: 0 auto;
+  animation: waveAnim 2s linear infinite alternate;
+  position: relative;
+  top: -40px;
+  
+}
+
+.footer-brand .text{
+  font-size: var(--fs-8);
+  margin-block-end: 20px;
+}
+
+.social-list{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-top .social-link{
+  background-color: rgb(90, 16, 228);
+  font-size: 18px;
+  padding: 8px;
+  border-radius:30%;
+}
+
+
