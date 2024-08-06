@@ -655,5 +655,17 @@ h2 {
       font-size: 3.5rem;
     }
     
+
+    .service-list{
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .form-section{
+      margin: 25px 80px;
+    }
+
+    .input-box{
+      margin: -15px 80px;
+    }
   }
 }
