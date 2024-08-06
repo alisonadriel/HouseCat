@@ -594,8 +594,8 @@ h2 {
   transform: translateY(-15px);
 }
 
-@media (max-width: 550px){
-  #m-btn{
+@media (max-width: 550px) {
+  #m-btn {
     display: none;
   }
 }
@@ -605,8 +605,6 @@ h2 {
     max-width: 550px;
     margin-inline: auto;
   }
-
- 
 
   .section-title {
     --fs-3: 3.6rem;
@@ -631,41 +629,125 @@ h2 {
   }
 
   @media (min-width: 768px) {
-    .container{
+    .container {
       max-width: 720px;
     }
 
-    .hero{
+    .hero {
       min-height: 600px;
       display: grid;
       place-items: center;
     }
 
-    .hero-content{
+    .hero-content {
       margin-block-end: 0;
     }
 
-    .hero .container{
+    .hero .container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
       gap: 30px;
     }
-    .hero-title{
+    .hero-title {
       font-size: 3.5rem;
     }
-    
 
-    .service-list{
+    .service-list {
       grid-template-columns: 1fr 1fr;
     }
 
-    .form-section{
+    .form-section {
       margin: 25px 80px;
     }
 
-    .input-box{
+    .input-box {
       margin: -15px 80px;
     }
+
+    .footer-top .container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 992px) {
+      :root {
+        --fs-1: 5.4rem;
+      }
+    }
+
+    .container {
+      max-width: 950px;
+    }
+
+    .header {
+      padding-block: 20px;
+    }
+
+    .overlay,
+    .nav-open-btn,
+    .navbar-top {
+      display: none;
+    }
+
+    .navbar, .navbar.active {
+      all: unset;
+      margin-inline-start: auto;
+    }
+
+    .header .btn {
+      margin-inline-start: 0;
+    }
+
+    .navbar-list {
+      display: flex;
+      gap: 25px;
+    }
+
+    .navbar-item:not(:last-child) {
+      border-bottom: none;
+    }
+
+    .navbar-link {
+      color: var(--color);
+    }
+
+    .hero {
+      min-height: 700px;
+    }
+
+    #cat-img {
+      width: 550px;
+    }
+
+    .service-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-top .container{
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-brand{
+      grid-column: 1/3;
+    }
+
+    .footer-brand .text{
+      max-width: 45ch;
+    }
+  }
+
+  @media (min-width:1200px){
+    .container {
+      max-width: 1200px;
+    }
+
+    .section-title{
+      --fs-3:4.6rem;
+    }
+
+    .hero{
+      min-height: 800px;
+    }
+
   }
 }
