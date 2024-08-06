@@ -689,7 +689,8 @@ h2 {
       display: none;
     }
 
-    .navbar, .navbar.active {
+    .navbar,
+    .navbar.active {
       all: unset;
       margin-inline-start: auto;
     }
@@ -723,31 +724,34 @@ h2 {
       grid-template-columns: repeat(3, 1fr);
     }
 
-    .footer-top .container{
+    .footer-top .container {
       grid-template-columns: repeat(4, 1fr);
     }
 
-    .footer-brand{
+    .footer-brand {
       grid-column: 1/3;
     }
 
-    .footer-brand .text{
+    .footer-brand .text {
       max-width: 45ch;
     }
   }
 
-  @media (min-width:1200px){
+  @media (min-width: 1200px) {
     .container {
       max-width: 1200px;
     }
 
-    .section-title{
-      --fs-3:4.6rem;
+    .section-title {
+      --fs-3: 4.6rem;
     }
 
-    .hero{
+    .hero {
       min-height: 800px;
     }
 
+    .form-section{
+      margin: 20px 180px;
+    }
   }
 }
