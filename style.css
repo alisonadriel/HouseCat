@@ -647,6 +647,13 @@ h2 {
 
     .hero .container{
       display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 30px;
     }
+    .hero-title{
+      font-size: 3.5rem;
+    }
+    
   }
 }
