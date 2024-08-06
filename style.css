@@ -239,9 +239,10 @@
   transition: var(--transition-2);
 }
 
-.btn:is(:hover, :focus) {
+.btn-adopt:is(:hover, :focus) {
   background-position: right;
-  background-color: rgb(68, 37, 37);
+  background-color: rgb(73, 41, 41);
+  transform: translateY(-3px);
 }
 
 .w-100 {
@@ -324,6 +325,10 @@ h2 {
   transition: var(--transition-2);
 }
 
+.adote-btn:hover {
+  background-color: rgb(68, 14, 168);
+  transform: translateY(-3px);
+}
 #help-title {
   color: rgb(92, 51, 51);
 }
@@ -750,7 +755,7 @@ h2 {
       min-height: 800px;
     }
 
-    .form-section{
+    .form-section {
       margin: 20px 180px;
     }
   }
