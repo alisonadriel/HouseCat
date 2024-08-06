@@ -479,6 +479,7 @@ h2 {
   font-family: var(--ff-poppins);
   font-size: var(--fs-8);
   position: absolute;
+  width: 100%;
 }
 
 .footer a {
