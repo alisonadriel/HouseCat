@@ -349,7 +349,7 @@ h2 {
 }
 
 .service-card .card-icon {
-  background-image: url(assets/img/cat-toy.png);
+  background-image: url(../assets/img/cat-toy.png);
   background-repeat: no-repeat;
   background-size: contain;
   animation: waveAnim 2s linear infinite alternate;
@@ -362,7 +362,7 @@ h2 {
 }
 
 .service-card .card-icon2 {
-  background-image: url(assets/img/cat-toy3.png);
+  background-image: url(../assets/img/cat-toy3.png);
   background-repeat: no-repeat;
   background-size: contain;
   animation: waveAnim 2s linear infinite alternate;
@@ -375,7 +375,7 @@ h2 {
 }
 
 .service-card .card-icon3 {
-  background-image: url(assets/img/cat-toy2.png);
+  background-image: url(../assets/img/cat-toy2.png);
   background-repeat: no-repeat;
   background-size: contain;
   animation: waveAnim 2s linear infinite alternate;
