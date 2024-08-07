@@ -502,7 +502,7 @@ h2 {
 }
 
 .footer-brand .logo {
-  background-image: url(assets/img/sticker.png);
+  background-image: url(../assets/img/sticker.png);
   aspect-ratio: 1/1;
   max-width: 180px;
   margin: 0 auto;
