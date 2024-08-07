@@ -180,13 +180,12 @@
 }
 
 .hero {
-  background-image: url(assets/img/hero-bg-bottom.png),
-    url(assets/img/hero-bg.png), var(--gradient-1);
-  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-image: var(--gradient-1);
   background-position: -280px bottom, center, center;
   background-size: auto, cover, auto;
   padding-block-start: 120px;
   padding-block-end: var(--section-padding);
+  border-radius:0% 100% 0% 100% / 67% 0% 100% 33% ;
 }
 
 .hero-content {
@@ -541,9 +540,7 @@ h2 {
   margin-block-end: 15px;
 }
 
-.footer-link {
-  padding-block: 5px;
-}
+
 
 :is(.footer-link, .footer-item-link):not(address):is(:hover, :focus) {
   text-decoration: underline;
@@ -729,6 +726,12 @@ h2 {
       grid-template-columns: repeat(3, 1fr);
     }
 
+    .form-section {
+      margin: 25px auto;
+      max-width: 700px; /* Define a largura máxima */
+      width: 100%;
+    }
+
     .footer-top .container {
       grid-template-columns: repeat(4, 1fr);
     }
@@ -757,8 +760,17 @@ h2 {
 
     .form-section {
       margin: 25px auto;
-      max-width: 700px; /* Define a largura máxima */
-      width: 100%; 
+      max-width: 700px;
+      width: 100%;
+    }
+
+    .hero {
+      background-image: var(--gradient-1);
+      background-position: -280px bottom, center, center;
+      background-size: auto, cover, auto;
+      padding-block-start: 120px;
+      padding-block-end: var(--section-padding);
+      border-radius:0% 100% 100% 0% / 26% 0% 100% 74%;
     }
   }
 }
