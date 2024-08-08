@@ -42,9 +42,14 @@ window.addEventListener("scroll", function () {
 
 // Modal para donate
 
-const modalBtn = document.querySelector(".adote-btn,.apoie-btn");
+const modalBtn = document.querySelector(".adote-btn");
 const modal = document.querySelector("dialog");
+const buttonClose = document.querySelector(".closeModal");
 
 modalBtn.onclick = function(){
   modal.showModal()
+}
+
+buttonClose.onclick = function(){
+  modal.close()
 }

@@ -184,7 +184,7 @@
   background-size: auto, cover, auto;
   padding-block-start: 120px;
   padding-block-end: var(--section-padding);
-  border-radius:0% 100% 0% 100% / 67% 0% 100% 33% ;
+  border-radius: 0% 100% 0% 100% / 67% 0% 100% 33%;
 }
 
 .hero-content {
@@ -309,6 +309,28 @@ h2 {
 .about-text {
   font-size: var(--fs-8);
   margin-block-end: 20px;
+}
+.dialog::backdrop {
+  background-color: black;
+}
+
+.modal-img {
+  width: 45%;
+  border-radius: 2rem;
+  margin: 20px auto;
+}
+
+.closeModal {
+  background-color: rgb(90, 16, 228);
+  background-size: 200%;
+  font-family: "Poppins";
+  color: var(--white);
+  padding: 12px 35px;
+  font-size: var(--fs-8);
+  font-weight: var(--fw-600);
+  border-radius: 0 25px;
+  transition: var(--transition-2);
+  margin: 20px auto;
 }
 
 .adote-btn {
@@ -539,8 +561,6 @@ h2 {
   margin-block-end: 15px;
 }
 
-
-
 :is(.footer-link, .footer-item-link):not(address):is(:hover, :focus) {
   text-decoration: underline;
 }
@@ -768,7 +788,7 @@ h2 {
       background-size: auto, cover, auto;
       padding-block-start: 120px;
       padding-block-end: var(--section-padding);
-      border-radius:0% 100% 100% 0% / 26% 0% 100% 74%;
+      border-radius: 0% 100% 100% 0% / 26% 0% 100% 74%;
     }
   }
 }
