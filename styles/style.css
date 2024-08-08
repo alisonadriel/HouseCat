@@ -320,6 +320,7 @@ h2 {
   width: 30%;
   box-shadow: var(--shadow);
   position: relative;
+  pointer-events: auto;
   
 }
 
@@ -331,6 +332,12 @@ h2 {
 }
 .modal::backdrop {
   background-color: rgba(0, 0, 0, 0.63);
+  overflow: hidden;
+}
+
+body:has(.modal[open]){
+  overflow: hidden;
+  pointer-events: none;
 }
 
 .modal-img {
