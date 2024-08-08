@@ -180,6 +180,7 @@
 
 .hero {
   background-image: var(--gradient-1);
+  box-shadow: var(--shadow);
   background-position: -280px bottom, center, center;
   background-size: auto, cover, auto;
   padding-block-start: 120px;
@@ -312,30 +313,39 @@ h2 {
 }
 
 .modal {
-  margin: 120px auto;
+  background-color: rgb(90, 16, 228);
+  margin: 55px auto;
   border: none;
   border-radius: 20px;
-  width: 40%;
+  width: 30%;
+  box-shadow: var(--shadow);
+  position: relative;
+  
 }
 
 .modal-text{
   font-size: 2rem;
-  color: rgb(92, 51, 51);
+  color: white;
   text-align: center;
-  margin-top: 20px;
+  padding-top: 40px;
 }
 .modal::backdrop {
   background-color: rgba(0, 0, 0, 0.63);
 }
 
 .modal-img {
-  width: 45%;
-  border-radius: 2rem;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 20px;
   margin: 20px auto;
 }
 
+.modal-img::backdrop {
+  background-color: rgba(0, 0, 0, 0.63);
+}
+
 .closeModal {
-  background-color: rgb(90, 16, 228);
+  background-color: hsl(318, 79%, 77%);
   background-size: 200%;
   font-family: "Poppins";
   color: var(--white);
