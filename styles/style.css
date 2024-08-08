@@ -310,8 +310,22 @@ h2 {
   font-size: var(--fs-8);
   margin-block-end: 20px;
 }
-.dialog::backdrop {
-  background-color: black;
+
+.modal {
+  margin: 120px auto;
+  border: none;
+  border-radius: 20px;
+  width: 40%;
+}
+
+.modal-text{
+  font-size: 2rem;
+  color: rgb(92, 51, 51);
+  text-align: center;
+  margin-top: 20px;
+}
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.63);
 }
 
 .modal-img {

@@ -51,7 +51,7 @@ html {
 }
 
 body {
-  background-color: var(--white);
+  background-color: rgb(250, 233, 236);
   color: var(--purple-navy);
   font-size: 1.6rem;
 }
