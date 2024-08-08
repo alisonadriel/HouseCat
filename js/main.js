@@ -39,3 +39,12 @@ window.addEventListener("scroll", function () {
     goTopBtn.classList.remove("showBtn");
   }
 });
+
+// Modal para donate
+
+const modalBtn = document.querySelector(".adote-btn,.apoie-btn");
+const modal = document.querySelector("dialog");
+
+modalBtn.onclick = function(){
+  modal.showModal()
+}
