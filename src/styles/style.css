@@ -332,6 +332,7 @@ body:has(.modal[open]){
 
 .modal-img::backdrop {
   background-color: rgba(0, 0, 0, 0.63);
+  z-index: 1;
 }
 
 
