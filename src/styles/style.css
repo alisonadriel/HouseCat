@@ -4,11 +4,10 @@
 /* colors */
 
 :root {
-  --hero-color:hsl(263, 78%, 75%);
+  --hero-color: hsl(263, 78%, 75%);
   --menu-color: hsl(236, 57%, 28%);
   --footer-bottom: hsl(230, 59%, 16%);
   --white: hsl(0, 0%, 100%);
-
 
   /* fontes */
   * {
@@ -208,6 +207,10 @@
   transition: var(--transition-2);
 }
 
+.btn:hover {
+  background-color: darkblue;
+}
+
 .btn-adopt {
   background-color: rgb(92, 51, 51);
   background-size: 200%;
@@ -292,6 +295,8 @@ h2 {
 .about-text {
   font-size: var(--fs-8);
   margin-block-end: 20px;
+  color: darkblue;
+  font-weight: 500;
 }
 
 .modal {
@@ -304,10 +309,9 @@ h2 {
   position: relative;
   pointer-events: auto;
   z-index: 5;
-  
 }
 
-.modal-text{
+.modal-text {
   font-size: 2rem;
   color: white;
   text-align: center;
@@ -318,7 +322,7 @@ h2 {
   overflow: hidden;
 }
 
-body:has(.modal[open]){
+body:has(.modal[open]) {
   overflow: hidden;
   pointer-events: none;
 }
@@ -335,8 +339,8 @@ body:has(.modal[open]){
   z-index: 1;
 }
 
-
-.closeModal, .copy-btn {
+.closeModal,
+.copy-btn {
   background-color: hsl(342, 97%, 66%);
   background-size: 200%;
   font-family: "Poppins";
@@ -349,7 +353,11 @@ body:has(.modal[open]){
   margin: 20px auto;
 }
 
-.chave-pix{
+.closeModal,
+.copy-btn:hover {
+  transform: translateY(-3px);
+}
+.chave-pix {
   display: none;
 }
 

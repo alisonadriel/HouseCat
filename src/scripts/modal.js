@@ -13,12 +13,13 @@ copyBtn.addEventListener("click", () => {
     popup.style.left = "50%";
     popup.style.transform = "translateX(-50%)";
     popup.style.padding = "10px 20px";
-    popup.style.backgroundColor = "rgb(90, 16, 228)";
-    popup.style.color = "white";
+    popup.style.backgroundColor = "lightgreen";
+    popup.style.color = "black";
     popup.style.borderRadius = "5px";
     popup.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.1)";
     popup.style.zIndex = "10";
     popup.style.fontFamily = "Poppins, sans-serif";
+    popup.style.fontWeight = "regular"
     popup.style.fontSize = "1.3rem";
 
     dialog.appendChild(popup);
