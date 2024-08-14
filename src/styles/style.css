@@ -466,6 +466,7 @@ h2 {
 }
 
 .service-card .text {
+  color: darkblue;
   text-align: center;
   margin-block-end: 20px;
   font-family: var(--ff-poppins);
