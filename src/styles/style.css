@@ -4,29 +4,11 @@
 /* colors */
 
 :root {
-  --st-patricks-blue: hsl(236, 57%, 28%);
-  --amaranth-purple: hsl(335, 88%, 38%);
-  --royal-blue-dark: hsl(318, 79%, 77%);
-  --chrome-yellow: hsl(0, 42%, 15%);
-  --space-cadet-1: hsl(230, 41%, 25%);
-  --space-cadet-2: hsl(230, 59%, 16%);
-  --winter-sky_50: hsla(335, 87%, 53%, 0.5);
-  --purple-navy: hsl(236, 26%, 43%);
-  --ksu-purple: hsl(318, 79%, 77%);
-  --winter-sky: hsl(318, 79%, 77%);
-  --razzmatazz: hsl(25, 29%, 46%);
-  --platinum: hsl(0, 0%, 90%);
-  --black_70: hsla(0, 0%, 0%, 0.7);
-  --rajah: hsl(24, 56%, 67%);
+  --hero-color:hsl(263, 78%, 75%);
+  --menu-color: hsl(236, 57%, 28%);
+  --footer-bottom: hsl(230, 59%, 16%);
   --white: hsl(0, 0%, 100%);
 
-  --gradient-1: linear-gradient(
-    90deg,
-    var(--royal-blue-dark) 0,
-    var(--ksu-purple) 51%,
-    var(--royal-blue-dark)
-  );
-  --gradient-2: linear-gradient(90deg, var(--razzmatazz), var(--rajah));
 
   /* fontes */
   * {
@@ -84,7 +66,7 @@
 }
 
 .header.active {
-  color: var(--st-patricks-blue);
+  color: var(--menu-color);
   position: fixed;
   background-color: var(--white);
   box-shadow: 0 2px 30px hsla(0, 0%, 0%, 0.048);
@@ -145,14 +127,14 @@
 }
 
 .nav-close-btn {
-  color: var(--space-cadet-1);
+  color: var(--footer-bottom);
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
 .navbar-item:not(:last-child) {
-  border-bottom: 1px solid var(--platinum);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.055);
 }
 
 .navbar-link {
@@ -166,7 +148,7 @@
 .overlay {
   position: fixed;
   inset: 0;
-  background-color: var(--black_70);
+  background-color: rgba(0, 0, 0, 0.507);
   z-index: 1;
   opacity: 0;
   pointer-events: none;
@@ -179,7 +161,7 @@
 }
 
 .hero {
-  background-image: var(--gradient-1);
+  background-color: var(--hero-color);
   box-shadow: var(--shadow);
   background-position: -280px bottom, center, center;
   background-size: auto, cover, auto;
@@ -321,6 +303,7 @@ h2 {
   box-shadow: var(--shadow);
   position: relative;
   pointer-events: auto;
+  z-index: 5;
   
 }
 
@@ -351,8 +334,9 @@ body:has(.modal[open]){
   background-color: rgba(0, 0, 0, 0.63);
 }
 
-.closeModal {
-  background-color: hsl(318, 79%, 77%);
+
+.closeModal, .copy-btn {
+  background-color: hsl(342, 97%, 66%);
   background-size: 200%;
   font-family: "Poppins";
   color: var(--white);
@@ -362,6 +346,10 @@ body:has(.modal[open]){
   border-radius: 0 25px;
   transition: var(--transition-2);
   margin: 20px auto;
+}
+
+.chave-pix{
+  display: none;
 }
 
 .adote-btn {
@@ -609,7 +597,7 @@ h2 {
 }
 
 .footer-bottom {
-  background-color: var(--space-cadet-2);
+  background-color: var(--footer-bottom);
   padding: 20px;
   text-align: center;
   color: var(--white);
@@ -808,13 +796,13 @@ h2 {
     }
 
     .form-section {
-      margin: 25px auto;
+      margin: 40px auto;
       max-width: 700px;
       width: 100%;
     }
 
     .hero {
-      background-image: var(--gradient-1);
+      background-color: hsl(263, 78%, 75%);
       background-position: -280px bottom, center, center;
       background-size: auto, cover, auto;
       padding-block-start: 120px;

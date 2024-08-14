@@ -1,87 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-// Colors
-$st-patricks-blue: hsl(236, 57%, 28%);
-$amaranth-purple: hsl(335, 88%, 38%);
-$royal-blue-dark: hsl(318, 79%, 77%);
-$chrome-yellow: hsl(0, 42%, 15%);
-$space-cadet-1: hsl(230, 41%, 25%);
-$space-cadet-2: hsl(230, 59%, 16%);
-$winter-sky_50: hsla(335, 87%, 53%, 0.5);
-$purple-navy: hsl(236, 26%, 43%);
-$ksu-purple: hsl(318, 79%, 77%);
-$winter-sky: hsl(318, 79%, 77%);
-$razzmatazz: hsl(25, 29%, 46%);
-$platinum: hsl(0, 0%, 90%);
-$black_70: hsla(0, 0%, 0%, 0.7);
-$rajah: hsl(24, 56%, 67%);
-$white: hsl(0, 0%, 100%);
+:root {
+  // Colors
+  --hero-color:hsl(263, 78%, 75%);
+  $menu-color: hsl(236, 57%, 28%);
+  $footer-bottom: hsl(230, 59%, 16%);
+  $white: hsl(0, 0%, 100%);
 
-$gradient-1: linear-gradient(90deg, $royal-blue-dark 0, $ksu-purple 51%, $royal-blue-dark);
-$gradient-2: linear-gradient(90deg, $razzmatazz, $rajah);
+  // Fonts
+  $ff-source-sans-pro: "Source Sans 3", sans-serif;
+  $ff-poppins: "Poppins", sans-serif;
 
-// Fonts
-$ff-source-sans-pro: "Source Sans 3", sans-serif;
-$ff-poppins: "Poppins", sans-serif;
+  // Font sizes
+  $fs-1: 4.2rem;
+  $fs-2: 3.8rem;
+  $fs-3: 3.2rem;
+  $fs-4: 2.5rem;
+  $fs-5: 2.4rem;
+  $fs-6: 2rem;
+  $fs-7: 1.8rem;
+  $fs-8: 1.5rem;
 
-$fs-1: 4.2rem;
-$fs-2: 3.8rem;
-$fs-3: 3.2rem;
-$fs-4: 2.5rem;
-$fs-5: 2.4rem;
-$fs-6: 2rem;
-$fs-7: 1.8rem;
-$fs-8: 1.5rem;
+  // Font weights
+  $fw-500: 500;
+  $fw-600: 600;
+  $fw-700: 700;
 
-$fw-500: 500;
-$fw-600: 600;
-$fw-700: 700;
+  // Border radius
+  $radius-4: 4px;
+  $radius-12: 12px;
 
-// Border radius
-$radius-4: 4px;
-$radius-12: 12px;
+  // Spacing
+  $section-padding: 60px;
 
-// Spacing
-$section-padding: 60px;
+  // Transition
+  $transition-1: 0.15s ease;
+  $transition-2: 0.35s ease;
+  $cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+  $cubic-out: cubic-bezier(0.33, 0.85, 0.56, 1.02);
 
-// Transition
-$transition-1: 0.15s ease;
-$transition-2: 0.35s ease;
-$cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
-$cubic-out: cubic-bezier(0.33, 0.85, 0.56, 1.02);
-
-// Shadow
-$shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
+  // Shadow
+  $shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
+}
 
 * {
-  --ff-source-sans-pro: $ff-source-sans-pro;
-  --ff-poppins: $ff-poppins;
-
-  --fs-1: $fs-1;
-  --fs-2: $fs-2;
-  --fs-3: $fs-3;
-  --fs-4: $fs-4;
-  --fs-5: $fs-5;
-  --fs-6: $fs-6;
-  --fs-7: $fs-7;
-  --fs-8: $fs-8;
-
-  --fw-500: $fw-500;
-  --fw-600: $fw-600;
-  --fw-700: $fw-700;
-  
-  --radius-4: $radius-4;
-  --radius-12: $radius-12;
-
-  --section-padding: $section-padding;
-
-  --transition-1: $transition-1;
-  --transition-2: $transition-2;
-  --cubic-in: $cubic-in;
-  --cubic-out: $cubic-out;
-
-  --shadow: $shadow;
+  font-family: $ff-source-sans-pro;
 }
 
 .header {
@@ -92,10 +56,10 @@ $shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
   width: 100%;
   padding-block: 14px;
   z-index: 4;
-  transition: var(--transition-1);
+  transition: $transition-1;
 
   &.active {
-    color: $st-patricks-blue;
+    color: $menu-color;
     position: fixed;
     background-color: $white;
     box-shadow: 0 2px 30px hsla(0, 0%, 0%, 0.048);
@@ -104,8 +68,12 @@ $shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
   .btn-top {
     display: none;
   }
+}
 
-  .container {
+.container {
+  padding-inline: 15px;
+
+  .header & {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -156,14 +124,14 @@ $shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
   }
 
   .nav-close-btn {
-    color: $space-cadet-1;
+    color: $footer-bottom;
     display: flex;
     align-items: center;
     gap: 20px;
   }
 
   .navbar-item:not(:last-child) {
-    border-bottom: 1px solid $platinum;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.055);
   }
 
   .navbar-link {
@@ -178,11 +146,11 @@ $shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
 .overlay {
   position: fixed;
   inset: 0;
-  background-color: $black_70;
+  background-color: rgba(0, 0, 0, 0.507);
   z-index: 1;
   opacity: 0;
   pointer-events: none;
-  transition: var(--transition-2);
+  transition: $transition-2;
 
   &.active {
     opacity: 1;
@@ -191,12 +159,12 @@ $shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
 }
 
 .hero {
-  background-image: $gradient-1;
+  background-color: var(--hero-color);
   box-shadow: $shadow;
   background-position: -280px bottom, center, center;
   background-size: auto, cover, auto;
   padding-block-start: 120px;
-  padding-block-end: var(--section-padding);
+  padding-block-end: $section-padding;
   border-radius: 0% 100% 0% 100% / 67% 0% 100% 33%;
 
   .hero-content {
@@ -235,7 +203,7 @@ $shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
   font-size: $fs-8;
   font-weight: $fw-600;
   border-radius: 0 25px;
-  transition: var(--transition-2);
+  transition: $transition-2;
 
   &-adopt {
     background-color: rgb(92, 51, 51);
@@ -246,7 +214,7 @@ $shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
     font-size: $fs-8;
     font-weight: $fw-600;
     border-radius: 0 25px;
-    transition: var(--transition-2);
+    transition: $transition-2;
 
     &:is(:hover, :focus) {
       background-position: right;
@@ -256,3 +224,142 @@ $shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
   }
 }
 
+.w-100 {
+  width: 100%;
+}
+
+.banner-animation {
+  animation: waveAnim 2s linear infinite alternate;
+}
+
+@keyframes waveAnim {
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+  100% {
+    transform: translate(2px, 2px) rotate(1deg);
+  }
+}
+
+.about-banner {
+  font-family: $ff-poppins;
+  margin-block-end: 30px;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+.section {
+  padding-block: $section-padding;
+
+  .section-title {
+    color: rgb(90, 16, 228);
+    font-size: $fs-3;
+    margin-block-end: 60px;
+    max-width: max-content;
+    margin-inline: auto;
+  }
+
+  .underline {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+      height: 6px;
+      background-color: $hero-color;
+      border-radius: 20px;
+    }
+  }
+}
+
+.about {
+  .section-title {
+    margin-inline: 0;
+  }
+
+  .underline::before {
+    left: 0;
+    transform: translateX(0);
+  }
+
+  .about-text {
+    font-size: $fs-8;
+    margin-block-end: 20px;
+  }
+}
+
+.modal {
+  background-color: rgb(90, 16, 228);
+  margin: 55px auto;
+  border: none;
+  border-radius: 20px;
+  width: 30%;
+  box-shadow: $shadow;
+  position: relative;
+  pointer-events: auto;
+
+  &-text {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+  }
+
+  &-header {
+    background-color: rgb(92, 51, 51);
+    color: white;
+    padding: 2px 16px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  &-content {
+    padding: 20px;
+  }
+
+  &-footer {
+    background-color: rgb(92, 51, 51);
+    color: white;
+    padding: 10px 16px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+  }
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+  &:hover,
+  &:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+footer {
+  text-align: center;
+  padding-block-end: $section-padding;
+  background-color: $white;
+
+  .footer-bottom {
+    text-align: center;
+    padding-block: 30px;
+    color: hsl(230, 59%, 16%);
+    background-color: $footer-bottom;
+    font-size: $fs-8;
+  }
+}
+
+.page-wrapper {
+  padding-bottom: 100px;
+}
