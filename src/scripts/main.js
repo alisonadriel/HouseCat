@@ -55,7 +55,7 @@ buttonClose.onclick = function () {
 };
 
 
-const apoieBtn = document.querySelector(".adote-btn");
+const apoieBtn = document.querySelector(".btn-adopt");
 
 apoieBtn.onclick = function(){
   modal.showModal();
