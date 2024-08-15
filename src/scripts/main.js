@@ -56,14 +56,12 @@ buttonClose.onclick = function () {
 
 const apoieBtn = document.querySelector(".btn-adopt");
 
-apoieBtn.onclick = function () {
-  modal.showModal();
-};
-
-buttonClose.onclick = function () {
-  modal.close();
-
-  modal.focus();
+apoieBtn.addEventListener("click", () => {
 
   window.scrollTo({ top: 0, behavior: "smooth" });
-};
+
+  
+  setTimeout(() => {
+    modal.showModal();
+  }, 300);
+});
