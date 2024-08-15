@@ -45,7 +45,7 @@
               <a href="#adote" class="navbar-link">Adote</a>
             </li>
             <li class="navbar-item">
-              <a href="#doe" class="navbar-link">Doe</a>
+              <a href="#home" class="navbar-link">Doe</a>
             </li>
           </ul>
         </nav>
@@ -64,7 +64,7 @@
     </header>
 
     <main>
-      <article>
+      <article id="#home">
         <section class="hero" id="home">
           <div class="container">
             <div class="hero-content">
@@ -98,7 +98,7 @@
           </div>
         </section>
 
-        <section class="section about" id="about">
+        <section class="section about" id="sobre">
           <div class="container">
             <figure class="about-banner">
               <img
@@ -148,7 +148,7 @@
           </div>
         </section>
 
-        <section class="section-service" id="services">
+        <section class="section-service" id="adote">
           <div class="container">
             <h2 class="h2 section-title underline" id="help-title">
               Como ajudar?
@@ -205,7 +205,7 @@
             src="./src/assets/img/cat-mail.png"
             alt=""
           />
-          <form action="#">
+          <form method="post" action="#">
             <div class="input-box">
               <input
                 type="text"
@@ -228,7 +228,7 @@
                 class="message"
                 placeholder="Insira aqui a sua mensagem..."
               ></textarea>
-              <button class="form-btn">Enviar</button>
+              <button onclick="sendEmail()" class="form-btn">Enviar</button>
             </div>
           </form>
         </section>
