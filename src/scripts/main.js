@@ -55,3 +55,13 @@ buttonClose.onclick = function () {
 };
 
 
+const apoieBtn = document.querySelector(".adote-btn");
+
+apoieBtn.onclick = function(){
+  modal.showModal();
+}
+
+buttonClose.onclick = function () {
+  modal.close();
+};
+
