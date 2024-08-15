@@ -20,7 +20,7 @@ copyBtn.addEventListener("click", () => {
     popup.style.zIndex = "10";
     popup.style.fontFamily = "Poppins, sans-serif";
     popup.style.fontWeight = "regular"
-    popup.style.fontSize = "1.3rem";
+    popup.style.fontSize = "1rem";
 
     dialog.appendChild(popup);
 
