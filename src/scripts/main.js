@@ -54,14 +54,14 @@ buttonClose.onclick = function () {
   modal.close();
 };
 
-
 const apoieBtn = document.querySelector(".btn-adopt");
 
-apoieBtn.onclick = function(){
+apoieBtn.onclick = function () {
   modal.showModal();
-}
+};
 
 buttonClose.onclick = function () {
   modal.close();
-};
 
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
