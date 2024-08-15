@@ -63,5 +63,7 @@ apoieBtn.onclick = function () {
 buttonClose.onclick = function () {
   modal.close();
 
+  modal.focus();
+
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
