@@ -342,6 +342,7 @@ body:has(.modal[open]) {
 .closeModal,
 .copy-btn {
   background-color: hsl(342, 97%, 66%);
+  box-shadow: var(--shadow);
   background-size: 200%;
   font-family: "Poppins";
   color: var(--white);

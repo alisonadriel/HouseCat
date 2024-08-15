@@ -1,90 +1,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
+// Colors
 :root {
-  // Colors
-  --hero-color:hsl(263, 78%, 75%);
-  $menu-color: hsl(236, 57%, 28%);
-  $footer-bottom: hsl(230, 59%, 16%);
-  $white: hsl(0, 0%, 100%);
+  --hero-color: hsl(263, 78%, 75%);
+  --menu-color: hsl(236, 57%, 28%);
+  --footer-bottom: hsl(230, 59%, 16%);
+  --white: hsl(0, 0%, 100%);
 
-  // Fonts
-  $ff-source-sans-pro: "Source Sans 3", sans-serif;
-  $ff-poppins: "Poppins", sans-serif;
+  // Font Sizes and Weights
+  --ff-source-sans-pro: "Source Sans 3", sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
 
-  // Font sizes
-  $fs-1: 4.2rem;
-  $fs-2: 3.8rem;
-  $fs-3: 3.2rem;
-  $fs-4: 2.5rem;
-  $fs-5: 2.4rem;
-  $fs-6: 2rem;
-  $fs-7: 1.8rem;
-  $fs-8: 1.5rem;
+  --fs-1: 4.2rem;
+  --fs-2: 3.8rem;
+  --fs-3: 3.2rem;
+  --fs-4: 2.5rem;
+  --fs-5: 2.4rem;
+  --fs-6: 2rem;
+  --fs-7: 1.8rem;
+  --fs-8: 1.5rem;
 
-  // Font weights
-  $fw-500: 500;
-  $fw-600: 600;
-  $fw-700: 700;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
 
-  // Border radius
-  $radius-4: 4px;
-  $radius-12: 12px;
+  // Border Radius
+  --radius-4: 4px;
+  --radius-12: 12px;
 
   // Spacing
-  $section-padding: 60px;
+  --section-padding: 60px;
 
   // Transition
-  $transition-1: 0.15s ease;
-  $transition-2: 0.35s ease;
-  $cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
-  $cubic-out: cubic-bezier(0.33, 0.85, 0.56, 1.02);
+  --transition-1: 0.15s ease;
+  --transition-2: 0.35s ease;
+  --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.56, 1.02);
 
   // Shadow
-  $shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
-}
-
-* {
-  font-family: $ff-source-sans-pro;
+  --shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
 }
 
 .header {
-  color: $white;
+  .btn-top {
+    display: none;
+  }
+
+  color: var(--white);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding-block: 14px;
   z-index: 4;
-  transition: $transition-1;
+  transition: var(--transition-1);
 
   &.active {
-    color: $menu-color;
+    color: var(--menu-color);
     position: fixed;
-    background-color: $white;
+    background-color: var(--white);
     box-shadow: 0 2px 30px hsla(0, 0%, 0%, 0.048);
   }
 
-  .btn-top {
-    display: none;
-  }
-}
-
-.container {
-  padding-inline: 15px;
-
-  .header & {
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
   }
-}
 
-.logo {
-  color: rgb(92, 51, 51);
-  font-family: $ff-poppins;
-  font-size: $fs-3;
+  .logo {
+    color: rgb(92, 51, 51);
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-3);
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-inline-start: auto;
+  }
 }
 
 .nav-open-btn {
@@ -93,7 +90,7 @@
 }
 
 .navbar {
-  background-color: $white;
+  background-color: var(--white);
   position: fixed;
   top: 0;
   left: -280px;
@@ -103,12 +100,12 @@
   padding: 20px;
   visibility: hidden;
   z-index: 2;
-  transition: 0.25s $cubic-in;
+  transition: 0.25s var(--cubic-in);
 
   &.active {
     transform: translateX(280px);
     visibility: visible;
-    transition: 0.5s $cubic-out;
+    transition: 0.5s var(--cubic-out);
   }
 
   .navbar-top {
@@ -119,15 +116,15 @@
     .logo {
       color: rgb(92, 51, 51);
       font-size: 3.2rem;
-      font-weight: $fw-700;
+      font-weight: var(--fw-700);
     }
-  }
 
-  .nav-close-btn {
-    color: $footer-bottom;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    .nav-close-btn {
+      color: var(--footer-bottom);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
   }
 
   .navbar-item:not(:last-child) {
@@ -136,9 +133,9 @@
 
   .navbar-link {
     color: rgb(92, 51, 51);
-    font-family: $ff-poppins;
-    font-size: $fs-8;
-    font-weight: $fw-600;
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-8);
+    font-weight: var(--fw-600);
     padding-block: 12px;
   }
 }
@@ -150,7 +147,7 @@
   z-index: 1;
   opacity: 0;
   pointer-events: none;
-  transition: $transition-2;
+  transition: var(--transition-2);
 
   &.active {
     opacity: 1;
@@ -160,11 +157,11 @@
 
 .hero {
   background-color: var(--hero-color);
-  box-shadow: $shadow;
+  box-shadow: var(--shadow);
   background-position: -280px bottom, center, center;
   background-size: auto, cover, auto;
   padding-block-start: 120px;
-  padding-block-end: $section-padding;
+  padding-block-end: var(--section-padding);
   border-radius: 0% 100% 0% 100% / 67% 0% 100% 33%;
 
   .hero-content {
@@ -173,23 +170,23 @@
 
   .hero-subtitle {
     color: rgb(92, 51, 51);
-    font-family: $ff-poppins;
-    font-size: $fs-4;
-    font-weight: $fw-700;
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-4);
+    font-weight: var(--fw-700);
     margin-block-end: 15px;
     display: none;
   }
 
   .hero-title {
     color: rgb(90, 16, 228);
-    font-size: $fs-1;
+    font-size: var(--fs-1);
     margin-block-start: -25px;
   }
 
   .hero-text {
-    color: $white;
-    font-family: $ff-poppins;
-    font-size: $fs-8;
+    color: var(--white);
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-8);
     margin-block-end: 30px;
   }
 }
@@ -198,29 +195,33 @@
   background-color: rgb(90, 16, 228);
   background-size: 200%;
   font-family: "Poppins";
-  color: $white;
+  color: var(--white);
   padding: 12px 35px;
-  font-size: $fs-8;
-  font-weight: $fw-600;
+  font-size: var(--fs-8);
+  font-weight: var(--fw-600);
   border-radius: 0 25px;
-  transition: $transition-2;
+  transition: var(--transition-2);
 
-  &-adopt {
-    background-color: rgb(92, 51, 51);
-    background-size: 200%;
-    font-family: "Poppins";
-    color: $white;
-    padding: 12px 35px;
-    font-size: $fs-8;
-    font-weight: $fw-600;
-    border-radius: 0 25px;
-    transition: $transition-2;
+  &:hover {
+    background-color: darkblue;
+  }
+}
 
-    &:is(:hover, :focus) {
-      background-position: right;
-      background-color: rgb(73, 41, 41);
-      transform: translateY(-3px);
-    }
+.btn-adopt {
+  background-color: rgb(92, 51, 51);
+  background-size: 200%;
+  font-family: "Poppins";
+  color: var(--white);
+  padding: 12px 35px;
+  font-size: var(--fs-8);
+  font-weight: var(--fw-600);
+  border-radius: 0 25px;
+  transition: var(--transition-2);
+
+  &:is(:hover, :focus) {
+    background-position: right;
+    background-color: rgb(73, 41, 41);
+    transform: translateY(-3px);
   }
 }
 
@@ -242,7 +243,7 @@
 }
 
 .about-banner {
-  font-family: $ff-poppins;
+  font-family: var(--ff-poppins);
   margin-block-end: 30px;
 }
 
@@ -251,30 +252,30 @@ h2 {
 }
 
 .section {
-  padding-block: $section-padding;
+  padding-block: var(--section-padding);
+}
 
-  .section-title {
-    color: rgb(90, 16, 228);
-    font-size: $fs-3;
-    margin-block-end: 60px;
-    max-width: max-content;
-    margin-inline: auto;
-  }
+.section-title {
+  color: rgb(90, 16, 228);
+  font-size: var(--fs-3);
+  margin-block-end: 60px;
+  max-width: max-content;
+  margin-inline: auto;
+}
 
-  .underline {
-    position: relative;
+.underline {
+  position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -20px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 70%;
-      height: 6px;
-      background-color: $hero-color;
-      border-radius: 20px;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 6px;
+    background-color: hsl(318, 79%, 77%);
+    border-radius: 20px;
   }
 }
 
@@ -289,77 +290,57 @@ h2 {
   }
 
   .about-text {
-    font-size: $fs-8;
+    font-size: var(--fs-8);
     margin-block-end: 20px;
+    color: darkblue;
+    font-weight: 500;
   }
 }
 
 .modal {
   background-color: rgb(90, 16, 228);
-  margin: 55px auto;
-  border: none;
-  border-radius: 20px;
-  width: 30%;
-  box-shadow: $shadow;
-  position: relative;
-  pointer-events: auto;
+  color: var(--white);
+  font-family: var(--ff-poppins);
+  width: 350px;
+  height: 200px;
+  border-radius: 16px;
+  padding: 15px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  box-shadow: 0 5px 25px hsla(220, 63%, 33%, 0.1);
+  z-index: 100;
+  transition: var(--transition-1);
+  display: none;
+  opacity: 0;
 
-  &-text {
-    font-size: 2rem;
-    color: white;
-    text-align: center;
+  &.active {
+    display: block;
+    opacity: 1;
   }
 
-  &-header {
-    background-color: rgb(92, 51, 51);
-    color: white;
-    padding: 2px 16px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
-
-  &-content {
-    padding: 20px;
-  }
-
-  &-footer {
-    background-color: rgb(92, 51, 51);
-    color: white;
-    padding: 10px 16px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    text-align: center;
+  .modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+    font-size: var(--fs-8);
   }
 }
 
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-
-  &:hover,
-  &:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+.footer {
+  background-color: var(--footer-bottom);
+  color: var(--white);
+  font-family: var(--ff-poppins);
+  padding: var(--section-padding) 0;
 }
 
-footer {
+.footer-bottom {
+  background-color: var(--footer-bottom);
+  padding: 15px 0;
+  color: var(--white);
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-8);
   text-align: center;
-  padding-block-end: $section-padding;
-  background-color: $white;
-
-  .footer-bottom {
-    text-align: center;
-    padding-block: 30px;
-    color: hsl(230, 59%, 16%);
-    background-color: $footer-bottom;
-    font-size: $fs-8;
-  }
-}
-
-.page-wrapper {
-  padding-bottom: 100px;
 }
