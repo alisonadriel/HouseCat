@@ -530,6 +530,40 @@ h2 {
   box-shadow: var(--shadow);
 }
 
+.form-btn:hover{
+  background-color: rgb(73, 41, 41);
+  transform: translatey(-2px);
+}
+
+.loader{
+ width: 25%;
+ padding: 10px; 
+ background-color: rgb(250, 90, 50);
+ margin: 10px auto;
+ border-radius: 1rem;
+ box-shadow: var(--shadow);
+ display: none;
+}
+
+.loader img{
+  margin: 0px auto;
+  animation: rotate .4s linear infinite;
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader.show{
+  display: block;
+}
+
 .footer {
   font-family: var(--ff-poppins);
   font-size: var(--fs-8);
