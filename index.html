@@ -205,9 +205,10 @@
             src="./src/assets/img/cat-mail.png"
             alt=""
           />
-          <form method="post" action="#">
+          <form onsubmit="sendEmail(); return false;" method="post">
             <div class="input-box">
               <input
+              id="name"
                 type="text"
                 name="name"
                 class="name"
@@ -216,6 +217,7 @@
             </div>
             <div class="input-box">
               <input
+              id="email"
                 type="text"
                 name="email"
                 class="name"
@@ -223,12 +225,12 @@
               />
             </div>
             <div class="input-box">
-              <textarea
+              <textarea id="message"
                 name="message"
                 class="message"
                 placeholder="Insira aqui a sua mensagem..."
               ></textarea>
-              <button onclick="sendEmail()" class="form-btn">Enviar</button>
+              <button  type="submit" class="form-btn">Enviar</button>
             </div>
           </form>
         </section>
