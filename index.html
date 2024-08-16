@@ -205,7 +205,7 @@
             src="./src/assets/img/cat-mail.png"
             alt=""
           />
-          <form onsubmit="sendEmail(); return false;" method="post">
+          <form id="contact-form" method="post">
             <div class="input-box">
               <input
               id="name"
@@ -230,7 +230,7 @@
                 class="message"
                 placeholder="Insira aqui a sua mensagem..."
               ></textarea>
-              <button  type="submit" class="form-btn">Enviar</button>
+              <button class="form-btn">Enviar</button>
             </div>
           </form>
         </section>
@@ -352,7 +352,7 @@
     </a>
     <script src="src/scripts/main.js"></script>
     <script src="src/scripts/modal.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="src/scripts/mail.js"></script>
   </body>
 </html>
