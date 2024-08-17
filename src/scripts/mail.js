@@ -18,7 +18,7 @@ window.onload = function() {
                 document.getElementById("contact-form").reset();
                 document.querySelector(".loader").classList.remove("show");
                 message.innerHTML = "";
-                message.innerHTML += "<span class='success-msg'> Enviado!</span>";
+                message.innerHTML += "<span class='success-msg'>Enviado!</span>";
                 message.classList.add("show");
                 setTimeout(() => message.classList.remove("show"), 2000);
             },

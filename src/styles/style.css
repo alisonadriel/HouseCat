@@ -561,20 +561,25 @@ h2 {
 }
 
 .form-message{
-  display: none;
-  width: 100%;
-  background-color: darkgreen;
-  margin-top: 10px;
-  text-align: center;
-  font-family: var(--ff-poppins);
+  width: 25%;
+ padding: 8px; 
+ background-color: rgb(60, 190, 88);
+ margin: 10px auto;
+ border-radius: 1rem;
+ box-shadow: var(--shadow);
+ display: none;
 }
 
 .form-message.show{
   display: block;
 }
 .success-msg{
-  color: green;
+  font-family: var(--ff-poppins);
+  color: #3a3a3a;
   line-height: 3;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .loader.show{
