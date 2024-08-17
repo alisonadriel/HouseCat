@@ -13,7 +13,7 @@ window.onload = function() {
       document.querySelector(".loader").classList.add("show")
       emailjs.sendForm('service_5kl2b03', 'template_m2rj2tn', this)
           .then(
-              function(){
+            function(){
                 document.getElementById("contact-form").reset();
                 document.querySelector(".loader").classList.remove("show");
                 message.innerHTML = "";
@@ -21,10 +21,10 @@ window.onload = function() {
                 message.classList.add("show");
                 setTimeout(() => message.classList.remove("show"), 2000);
             },
-              function(error){
+            function(error){
                 document.querySelector(".loader").classList.toggle("show");
                 message.classList.add("show");
-                message.innerHTML += "<span class='error-msg'>Não enviado!</span>";
+                message.innerHTML += "<span class='error-msg'>Erro!</span>";
               }
            );
   });
