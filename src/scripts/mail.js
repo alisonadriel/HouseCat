@@ -1,5 +1,4 @@
 (function() {
-  // https://dashboard.emailjs.com/admin/account
   emailjs.init({
     publicKey: "esxt9BHWFNLhDoDqG",
   });
@@ -22,8 +21,11 @@ window.onload = function() {
                 message.classList.add("show");
                 setTimeout(() => message.classList.remove("show"), 2000);
             },
-           (error) => {
-              console.log('FAILED...', error);
-          });
+              function(error){
+                document.querySelector(".loader").classList.toggle("show");
+                message.classList.add("show");
+                message.innerHTML += "<span class='error-msg'>Não enviado!</span>";
+              }
+           );
   });
 }

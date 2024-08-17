@@ -563,7 +563,7 @@ h2 {
 .form-message{
   width: 25%;
  padding: 8px; 
- background-color: rgb(60, 190, 88);
+ background-color: rgb(250, 243, 245);
  margin: 10px auto;
  border-radius: 1rem;
  box-shadow: var(--shadow);
@@ -575,12 +575,21 @@ h2 {
 }
 .success-msg{
   font-family: var(--ff-poppins);
-  color: #3a3a3a;
+  color: rgb(82, 82, 82);
   line-height: 3;
   text-align: center;
   font-size: 1.4rem;
   font-weight: bold;
 }
+
+.error-msg{
+  font-family: var(--ff-poppins);
+  color: rgb(255, 38, 0);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
 
 .loader.show{
   display: block;
