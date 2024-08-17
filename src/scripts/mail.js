@@ -5,7 +5,7 @@
   });
 })();
 
-const message = document.querySelector("#message");
+const message = document.querySelector(".form-message");
 
 
 window.onload = function() {
@@ -15,11 +15,11 @@ window.onload = function() {
       emailjs.sendForm('service_5kl2b03', 'template_m2rj2tn', this)
           .then(
               function(){
-                document.querySelector(".contact-form").reset();
+                document.getElementById("contact-form").reset();
                 document.querySelector(".loader").classList.remove("show");
-                msg.innerHTML = "";
-                msg.innerHTML += "<span class='sucess-msg'> E-mail enviado!</span>";
-                msg.classList.add("show");
+                message.innerHTML = "";
+                message.innerHTML += "<span class='success-msg'> Enviado!</span>";
+                message.classList.add("show");
                 setTimeout(() => message.classList.remove("show"), 2000);
             },
            (error) => {

@@ -560,6 +560,23 @@ h2 {
   }
 }
 
+.form-message{
+  display: none;
+  width: 100%;
+  background-color: darkgreen;
+  margin-top: 10px;
+  text-align: center;
+  font-family: var(--ff-poppins);
+}
+
+.form-message.show{
+  display: block;
+}
+.success-msg{
+  color: green;
+  line-height: 3;
+}
+
 .loader.show{
   display: block;
 }
