@@ -32,6 +32,16 @@ window.onload = function() {
 
 // Validação do formulário
 
-const form = document.getElementById("contact-form");
+const form   = document.getElementById("contact-form");
 const campos = document.querySelectorAll(".required");
+const spans  = document.querySelectorAll(".span-required");
+const emailRegex = /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/;
 
+
+    function nameValidate(){
+      if(campos[0].value.length<3){
+          console.log("Nome deve conter no mínimo 3 caracteres");
+      }else{
+          console.log("Validado");
+      }
+    }
