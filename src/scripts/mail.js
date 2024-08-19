@@ -29,3 +29,9 @@ window.onload = function() {
            );
   });
 }
+
+// Validação do formulário
+
+const form = document.getElementById("contact-form");
+const campos = document.querySelectorAll(".required");
+
