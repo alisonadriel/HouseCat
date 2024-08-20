@@ -561,7 +561,7 @@ h2 {
 }
 
 .form-message{
-  width: 25%;
+  min-width: 150px;
  padding: 10px; 
  background-color: rgb(250, 243, 245);
  margin: 10px auto;
