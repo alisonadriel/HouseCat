@@ -38,10 +38,21 @@ const spans  = document.querySelectorAll(".span-required");
 const emailRegex = /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/;
 
 
+    function setError(index){
+      campos[index].style.border = "2px solid #e63636";
+      spans[index].style.display = "block";
+    }
+
+
+    function removeError(index){
+      campos[index].style.border = "";
+      spans[index].style.display = "none";
+    }
+
     function nameValidate(){
       if(campos[0].value.length<3){
-          console.log("Nome deve conter no mínimo 3 caracteres");
+          setError(0);
       }else{
-          console.log("Validado");
+          removeError(0);
       }
     }

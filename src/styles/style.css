@@ -570,8 +570,18 @@ h2 {
  display: none;
 }
 
+.span-required{
+  display: none;
+  font-size: 12px;
+  margin: 3px 0 0 4px;
+  font-weight: 600;
+  font-family: var(--ff-poppins);
+  color: #e63636;
+}
+
 .form-message.show{
   display: block;
+
 }
 .success-msg{
   font-family: var(--ff-poppins);
