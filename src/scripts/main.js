@@ -1,6 +1,6 @@
 "use strict";
 
-// interações do menu
+// Interações do menu
 
 const navOpenBtn = document.querySelector(".nav-open-btn");
 const navBar = document.querySelector(".navbar");
@@ -57,10 +57,8 @@ buttonClose.onclick = function () {
 const apoieBtn = document.querySelector(".btn-adopt");
 
 apoieBtn.addEventListener("click", () => {
-
   window.scrollTo({ top: 0, behavior: "smooth" });
 
-  
   setTimeout(() => {
     modal.showModal();
   }, 300);
