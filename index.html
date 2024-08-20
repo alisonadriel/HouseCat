@@ -221,7 +221,7 @@
               id="email"
                 type="text"
                 name="email "
-                class="name required" 
+                class="name required"  oninput="emailValidate()"
                 placeholder="Insira o seu e-mail"
               />
               <span class="span-required">Insira um e-mail válido.</span>
@@ -229,7 +229,7 @@
             <div class="input-box">
               <textarea id="message"
                 name="message"
-                class="message required" 
+                class="message required" oninput="msgValidate()" 
                 placeholder="Insira aqui a sua mensagem..."
               ></textarea>
               <span class="span-required">Insira a sua mensagem.</span>

@@ -56,3 +56,18 @@ const emailRegex = /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/;
           removeError(0);
       }
     }
+
+    function emailValidate(){
+      if(!emailRegex.test(campos[1].value)){
+        setError(1);
+      }else{
+        removeError(1);
+      }
+    }
+
+    function msgValidate(){
+      if(!campos[2].value.length<1){
+          setError(2);
+      } else
+          removeError(2);
+    }
