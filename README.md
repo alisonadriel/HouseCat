@@ -12,7 +12,11 @@ aumentar o número de arrecadações e, principalmente, arranjar um lar para os 
  
 
 
-https://github.com/user-attachments/assets/aebd6660-69fe-4232-a64b-9637b7c076bf
+
+
+https://github.com/user-attachments/assets/43a7ed54-438c-4421-89ad-93b013b473a6
+
+
 
 
 
