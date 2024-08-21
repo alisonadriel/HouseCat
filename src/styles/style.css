@@ -252,6 +252,7 @@
   }
 }
 
+
 .about-banner {
   font-family: var(--ff-poppins);
   margin-block-end: 30px;
@@ -291,6 +292,18 @@ h2 {
 
 .about .section-title {
   margin-inline: 0;
+}
+
+body .js-scroll{
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: .3s;
+}
+
+body .js-scroll.ativo{
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  
 }
 
 .about .underline::before {
@@ -565,6 +578,7 @@ h2 {
     transform: rotate(360deg);
   }
 }
+
 
 .form-message{
   min-width: 150px;
