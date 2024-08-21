@@ -6,10 +6,9 @@ aumentar o número de arrecadações e, principalmente, arranjar um lar para os 
 
 
 
-<p align="center">
+
 <b>Veja o site em diferentes tipos de aparelhos!</b>
 </p>
-<p align="center">
   <b> 💻 Desktop & Mobile</b>
   </p>
  
