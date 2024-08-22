@@ -55,6 +55,14 @@ Foi usado <b>HTML</b> para realizar a estrutura do projeto, <b>Sass</b> para est
   <img src="src/assets/readme/email-teste.png" width="1200px">
 </p>
 
+<h3>Instruções do Uso</h3>
+
+```
+git clone https://github.com/alisonadriel/HouseCat.git
+npm install
+```
+Execute o index.html no seu navegador.
+
 <h2> 🔜 Futuro do Projeto</h2>
 
 ### O que será adicionado futuramente ao projeto?
