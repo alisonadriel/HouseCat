@@ -65,7 +65,7 @@
   transition: var(--transition-1);
 }
 
-.housecat-logo{
+.housecat-logo {
   height: 50px;
   align-items: center;
 }
@@ -252,7 +252,6 @@
   }
 }
 
-
 .about-banner {
   font-family: var(--ff-poppins);
   margin-block-end: 30px;
@@ -294,16 +293,15 @@ h2 {
   margin-inline: 0;
 }
 
-body .js-scroll{
+body .js-scroll {
   opacity: 0;
   transform: translate3d(-30px, 0, 0);
-  transition: .3s;
+  transition: 0.3s;
 }
 
-body .js-scroll.ativo{
+body .js-scroll.ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
-  
 }
 
 .about .underline::before {
@@ -549,28 +547,28 @@ h2 {
   box-shadow: var(--shadow);
 }
 
-.form-btn:hover{
+.form-btn:hover {
   background-color: rgb(73, 41, 41);
   transform: translatey(-2px);
 }
 
-.loader{
- width: 25%;
- padding: 10px; 
- background-color: rgb(250, 90, 50);
- margin: 10px auto;
- border-radius: 1rem;
- box-shadow: var(--shadow);
- display: none;
+.loader {
+  width: 25%;
+  padding: 10px;
+  background-color: rgb(250, 90, 50);
+  margin: 10px auto;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  display: none;
 }
 
-.loader img{
+.loader img {
   margin: 0px auto;
-  animation: rotate .4s linear infinite;
+  animation: rotate 0.4s linear infinite;
 }
 
 @keyframes rotate {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
 
@@ -579,18 +577,17 @@ h2 {
   }
 }
 
-
-.form-message{
+.form-message {
   min-width: 150px;
- padding: 10px; 
- background-color: rgb(250, 243, 245);
- margin: 10px auto;
- border-radius: 1rem;
- box-shadow: var(--shadow);
- display: none;
+  padding: 10px;
+  background-color: rgb(250, 243, 245);
+  margin: 10px auto;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  display: none;
 }
 
-.span-required{
+.span-required {
   display: none;
   font-size: 12px;
   margin: 3px 0 0 4px;
@@ -599,11 +596,10 @@ h2 {
   color: #e63636;
 }
 
-.form-message.show{
+.form-message.show {
   display: block;
-
 }
-.success-msg{
+.success-msg {
   font-family: var(--ff-poppins);
   color: rgb(14, 124, 0);
   line-height: 3;
@@ -612,7 +608,7 @@ h2 {
   font-weight: bold;
 }
 
-.error-msg{
+.error-msg {
   font-family: var(--ff-poppins);
   color: rgb(255, 38, 0);
   text-align: center;
@@ -620,8 +616,7 @@ h2 {
   font-weight: bold;
 }
 
-
-.loader.show{
+.loader.show {
   display: block;
 }
 
