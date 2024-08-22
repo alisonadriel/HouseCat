@@ -22,12 +22,16 @@
       <div class="container">
         <div class="overlay"></div>
         <a href="#">
-          <img class="housecat-logo" src="src/assets/img/animal-shelter.png" alt="">
+          <img
+            class="housecat-logo"
+            src="src/assets/img/animal-shelter.png"
+            alt=""
+          />
         </a>
 
         <nav class="navbar">
           <div class="navbar-top">
-            <a href="#" class="logo">HouseCat</a> 
+            <a href="#" class="logo">HouseCat</a>
 
             <button class="nav-close-btn" aria-label="Close Menu">
               <span class="material-symbols-outlined"> close </span>
@@ -66,20 +70,20 @@
     <main>
       <article id="#home">
         <section class="hero" id="home">
-          <div class="container ">
+          <div class="container">
             <div class="hero-content">
               <p class="hero-subtitle">
                 Somos uma ONG localizada no Rio de Janeiro
               </p>
 
               <h2 class="h2 hero-title">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officia, similique!
+                Encontre o seu novo amigo felino na HouseCat: adote amor, adote
+                um Gato!
               </h2>
 
               <p class="hero-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-                odio rerum nobis officiis velit culpa.
+                Ofereça a um gato a chance de ter um lar amoroso e descubra a
+                alegria de ter um novo amigo
               </p>
 
               <button class="btn-adopt">Apoie!</button>
@@ -98,9 +102,9 @@
           </div>
         </section>
 
-        <section class="section about " id="sobre">
+        <section class="section about" id="sobre">
           <div class="container js-scroll">
-            <figure class="about-banner ">
+            <figure class="about-banner">
               <img
                 src="./src/assets/img/cat-banner2.png"
                 alt="about banner"
@@ -112,15 +116,17 @@
               />
 
               <div class="about-content">
-                <h2 class="h2 section-title underline">Lorem ipsum dolor.</h2>
+                <h2 class="h2 section-title underline">Sobre a HouseCat</h2>
                 <p class="about-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                  nemo suscipit recusandae aliquam, dolorum quia.
+                  A HouseCat é uma ONG dedicada ao bem-estar dos animais,
+                  atuando há 5 anos no resgate e adoção de cães e gatos. Desde
+                  sua fundação, já doou mais de 300 animais, oferecendo a eles
+                  novos lares e a chance de uma vida melhor.
                 </p>
 
                 <p class="about-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                  nemo suscipit recusandae aliquam, dolorum quia.
+                  Nossa missão é continuar fazendo a diferença, unindo pets
+                  carentes a famílias amorosas.
                 </p>
 
                 <a
@@ -159,10 +165,10 @@
                 <div class="service-card">
                   <div class="card-icon"></div>
 
-                  <h3 class="h3 title">Lorem, ipsum.</h3>
+                  <h3 class="h3 title">Alimento</h3>
                   <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolore soluta quo nam blanditiis commodi explicabo.
+                    Doe ração e ajude a garantir que nossos animais recebam a
+                    nutrição que precisam.
                   </p>
 
                   <button class="card-btn" aria-label="Show More"></button>
@@ -173,10 +179,10 @@
                 <div class="service-card">
                   <div class="card-icon2"></div>
 
-                  <h3 class="h3 title">Lorem, ipsum.</h3>
+                  <h3 class="h3 title">Casinha</h3>
                   <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolore soluta quo nam blanditiis commodi explicabo.
+                    Doe para proporcionar um lar acolhedor e seguro para nossos
+                    animais.
                   </p>
 
                   <button class="card-btn" aria-label="Show More"></button>
@@ -187,10 +193,10 @@
                 <div class="service-card">
                   <div class="card-icon3"></div>
 
-                  <h3 class="h3 title">Lorem, ipsum.</h3>
+                  <h3 class="h3 title">Brinquedos</h3>
                   <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolore soluta quo nam blanditiis commodi explicabo.
+                    Divirta os felinos. Doe brinquedos para manter a diversão
+                    por toda parte.
                   </p>
 
                   <button class="card-btn" aria-label="Show More"></button>
@@ -208,34 +214,40 @@
           <form id="contact-form" method="post">
             <div class="input-box">
               <input
-              id="name"
+                id="name"
                 type="text"
                 name="name"
-                class="name required" oninput="nameValidate()"
+                class="name required"
+                oninput="nameValidate()"
                 placeholder="Insira o seu nome"
               />
-              <span class="span-required">Nome deve ter no mínimo 3 caracteres.</span>
+              <span class="span-required"
+                >Nome deve ter no mínimo 3 caracteres.</span
+              >
             </div>
             <div class="input-box">
               <input
-              id="email"
+                id="email"
                 type="text"
                 name="email "
-                class="name required"  oninput="emailValidate()"
+                class="name required"
+                oninput="emailValidate()"
                 placeholder="Insira o seu e-mail"
               />
               <span class="span-required">Insira um e-mail válido.</span>
             </div>
             <div class="input-box">
-              <textarea id="message"
+              <textarea
+                id="message"
                 name="message"
-                class="message required" oninput="msgValidate()" 
+                class="message required"
+                oninput="msgValidate()"
                 placeholder="Insira aqui a sua mensagem..."
               ></textarea>
               <span class="span-required">Insira a sua mensagem.</span>
               <button class="form-btn">Enviar</button>
               <div class="loader">
-                <img src="src/assets/icons/pet-loader.svg" alt="">
+                <img src="src/assets/icons/pet-loader.svg" alt="" />
               </div>
               <div class="form-message"></div>
             </div>
@@ -251,8 +263,9 @@
             <img src="./src/assets/img/sticker.png" class="logo" alt="" />
 
             <p class="text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-              quae voluptatum. Rerum rem sequi assumenda.
+              Junte-se a nós na missão de oferecer amor e cuidado aos felinos.
+              Com sua ajuda, podemos fazer a diferença na vida dos nossos amigos
+              peludos. Descubra como contribuir e apoiar nossa causa.
             </p>
 
             <ul class="social-list">
@@ -296,16 +309,16 @@
             </li>
 
             <li>
-              <a href="" class="footer-link">Lorem.</a>
+              <a  href="#home" class="footer-link">Home</a>
             </li>
             <li>
-              <a href="" class="footer-link">Lorem, ipsum.</a>
+              <a href="#sobre" class="footer-link">Sobre</a>
             </li>
             <li>
-              <a href="" class="footer-link">Lorem.</a>
+              <a href="#adote" class="footer-link">Adote</a>
             </li>
             <li>
-              <a href="" class="footer-link">Lorem, ipsum.</a>
+              <a href="#home" class="footer-link">Doe</a>
             </li>
           </ul>
 
@@ -359,8 +372,10 @@
     </a>
     <script src="src/scripts/main.js"></script>
     <script src="src/scripts/modal.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script src="src/scripts/mail.js"></script>
   </body>
 </html>
-
