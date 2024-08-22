@@ -46,7 +46,19 @@ Foi usado <b>HTML</b> para realizar a estrutura do projeto, <b>Sass</b> para est
   <b>Envio de e-mail</b>
   <img src="src/assets/readme/email-teste.png" width="1200px">
 </p>
-  
+
+<h2> 🔜 Futuro do Projeto</h2>
+
+### O que será adicionado futuramente ao projeto?
+Pretendo futuramente adicionar um painel ADMIN onde o dono da ONG possa publicar fotos dos gatos que estão disponíveis para a adoção juntamente com a descrição do felino.
+Dessa forma, ficará mais fácil e intuitivo o processo de adoção e manutenção do site.
+
+
+## 👋 Obrigado pela leitura e abaixo está o link para contato.
+
+[LinkedIn 💬](https://www.linkedin.com/in/alisonadriel/)
+
+
 
 
 
